@@ -1,0 +1,232 @@
+{
+  "metrics": {
+    "primary_top3_feasible_recall": 1.0,
+    "safety_baseline_false_accessible_rate": 0.3,
+    "performance_p95_latency_ms": 0.323,
+    "supporting_avg_distance_m": {
+      "system_walking_adjusted": 110.8,
+      "baseline_straight_line": 81.0
+    },
+    "performance_median_latency_ms": 0.199
+  },
+  "per_scenario": [
+    {
+      "scenario_id": "S01",
+      "location": "Bugis Junction",
+      "day_time": "Tuesday 15:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "188022-001",
+        "188021-001",
+        "188476-001"
+      ],
+      "baseline_top3": [
+        "188022-001",
+        "188021-001",
+        "188476-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 2.691
+    },
+    {
+      "scenario_id": "S02",
+      "location": "Toa Payoh HDB Hub",
+      "day_time": "Sunday 23:00",
+      "total_candidates": 10,
+      "feasible_count": 8,
+      "infeasible_count": 2,
+      "system_top3": [
+        "319398-001",
+        "310480-002",
+        "310480-003"
+      ],
+      "baseline_top3": [
+        "310490-002",
+        "310490-001",
+        "319398-001"
+      ],
+      "baseline_false_accessible_count": 2,
+      "baseline_false_accessible_aeds": [
+        "310490-002",
+        "310490-001"
+      ],
+      "latency_ms": 0.37
+    },
+    {
+      "scenario_id": "S03",
+      "location": "Orchard Road (ION Orchard)",
+      "day_time": "Saturday 13:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "238801-005",
+        "238801-006",
+        "238801-007"
+      ],
+      "baseline_top3": [
+        "238801-005",
+        "238801-006",
+        "238801-007"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.41
+    },
+    {
+      "scenario_id": "S04",
+      "location": "Pioneer Walk",
+      "day_time": "Saturday 20:00",
+      "total_candidates": 10,
+      "feasible_count": 8,
+      "infeasible_count": 2,
+      "system_top3": [
+        "627753-001",
+        "628631-002",
+        "628631-001"
+      ],
+      "baseline_top3": [
+        "627753-001",
+        "629978-001",
+        "628631-002"
+      ],
+      "baseline_false_accessible_count": 1,
+      "baseline_false_accessible_aeds": [
+        "629978-001"
+      ],
+      "latency_ms": 0.32
+    },
+    {
+      "scenario_id": "S05",
+      "location": "Jurong Point",
+      "day_time": "Wednesday 11:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "648886-004",
+        "648886-005",
+        "648886-003"
+      ],
+      "baseline_top3": [
+        "648886-004",
+        "648886-005",
+        "648886-003"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 2.366
+    },
+    {
+      "scenario_id": "S06",
+      "location": "Yishun Ring Road (residential)",
+      "day_time": "Monday 06:30",
+      "total_candidates": 10,
+      "feasible_count": 9,
+      "infeasible_count": 1,
+      "system_top3": [
+        "760755-001",
+        "760729-001",
+        "760759-001"
+      ],
+      "baseline_top3": [
+        "760755-001",
+        "760729-001",
+        "760759-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.361
+    },
+    {
+      "scenario_id": "S07",
+      "location": "Tampines Mall",
+      "day_time": "Friday 19:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "529510-001",
+        "529510-003",
+        "529510-002"
+      ],
+      "baseline_top3": [
+        "529510-001",
+        "529510-003",
+        "529510-002"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 2.726
+    },
+    {
+      "scenario_id": "S08",
+      "location": "Chinatown (Pagoda Street)",
+      "day_time": "Thursday 22:30",
+      "total_candidates": 10,
+      "feasible_count": 8,
+      "infeasible_count": 2,
+      "system_top3": [
+        "059443-001",
+        "058945-001",
+        "059413-002"
+      ],
+      "baseline_top3": [
+        "059443-001",
+        "058362-001",
+        "051335-001"
+      ],
+      "baseline_false_accessible_count": 2,
+      "baseline_false_accessible_aeds": [
+        "058362-001",
+        "051335-001"
+      ],
+      "latency_ms": 0.526
+    },
+    {
+      "scenario_id": "S09",
+      "location": "Punggol Waterway Point",
+      "day_time": "Sunday 10:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "828761-002",
+        "828761-001",
+        "821308-001"
+      ],
+      "baseline_top3": [
+        "828761-002",
+        "828761-001",
+        "821308-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 1.282
+    },
+    {
+      "scenario_id": "S10",
+      "location": "Bishan-Ang Mo Kio Park",
+      "day_time": "Wednesday 17:30",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "562310-001",
+        "570254-001",
+        "563310-001"
+      ],
+      "baseline_top3": [
+        "562310-001",
+        "570254-001",
+        "563310-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 1.057
+    }
+  ]
+}

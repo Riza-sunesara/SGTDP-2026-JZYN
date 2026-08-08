@@ -1,0 +1,92 @@
+[
+  {
+    "scenario_id": "S01",
+    "location_name": "Bugis Junction",
+    "day_of_week": "Tuesday",
+    "time": "15:00",
+    "lat": 1.2995890796324496,
+    "lng": 103.85552397170694,
+    "notes": "weekday daytime, dense commercial area"
+  },
+  {
+    "scenario_id": "S02",
+    "location_name": "Toa Payoh HDB Hub",
+    "day_of_week": "Sunday",
+    "time": "23:00",
+    "lat": 1.3328409657023292,
+    "lng": 103.84806838269759,
+    "notes": "weekend nighttime, residential/sparse area"
+  },
+  {
+    "scenario_id": "S03",
+    "location_name": "Orchard Road (ION Orchard)",
+    "day_of_week": "Saturday",
+    "time": "13:00",
+    "lat": 1.3047048950723552,
+    "lng": 103.83213542509972,
+    "notes": "weekend midday, dense shopping district"
+  },
+  {
+    "scenario_id": "S04",
+    "location_name": "Pioneer Walk",
+    "day_of_week": "Saturday",
+    "time": "20:00",
+    "lat": 1.3193796705023573,
+    "lng": 103.69495876550073,
+    "notes": "weekend evening, industrial/western area"
+  },
+  {
+    "scenario_id": "S05",
+    "location_name": "Jurong Point",
+    "day_of_week": "Wednesday",
+    "time": "11:00",
+    "lat": 1.3396,
+    "lng": 103.7066,
+    "notes": "weekday late morning, dense mall area"
+  },
+  {
+    "scenario_id": "S06",
+    "location_name": "Yishun Ring Road (residential)",
+    "day_of_week": "Monday",
+    "time": "06:30",
+    "lat": 1.4263975894460061,
+    "lng": 103.8321241520087,
+    "notes": "weekday early morning, sparse residential, tests office-hours edge case"
+  },
+  {
+    "scenario_id": "S07",
+    "location_name": "Tampines Mall",
+    "day_of_week": "Friday",
+    "time": "19:00",
+    "lat": 1.3526,
+    "lng": 103.9447,
+    "notes": "weekday evening, dense eastern hub"
+  },
+  {
+    "scenario_id": "S08",
+    "location_name": "Chinatown (Pagoda Street)",
+    "day_of_week": "Thursday",
+    "time": "22:30",
+    "lat": 1.2836,
+    "lng": 103.8441,
+    "notes": "weekday late night, mixed heritage/commercial, tests closed-shop scenarios"
+  },
+  {
+    "scenario_id": "S09",
+    "location_name": "Punggol Waterway Point",
+    "day_of_week": "Sunday",
+    "time": "10:00",
+    "lat": 1.4065,
+    "lng": 103.902,
+    "notes": "weekend morning, newer sparse-AED-coverage area, tests low-candidate-density edge case"
+  },
+  {
+    "scenario_id": "S10",
+    "location_name": "Bishan-Ang Mo Kio Park",
+    "day_of_week": "Wednesday",
+    "time": "17:30",
+    "lat": 1.3636,
+    "lng": 103.8435,
+    "notes": "weekday late afternoon, park/outdoor area, tests ambiguous-location-description edge case"
+  }
+]

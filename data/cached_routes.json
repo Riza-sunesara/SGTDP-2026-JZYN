@@ -1,0 +1,4572 @@
+[
+  {
+    "scenario_id": "S01",
+    "aed_id": "188022-001",
+    "straight_line_distance_m": 71.5,
+    "walking_distance_m": 96.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Bugis MRT Station",
+    "location_description": "Near Passenger Service Centre (EWL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188021-001",
+    "straight_line_distance_m": 82.7,
+    "walking_distance_m": 111.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Bugis Junction",
+    "location_description": "Level 2 Customer Service Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188476-001",
+    "straight_line_distance_m": 138.2,
+    "walking_distance_m": 186.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Bugis MRT Station",
+    "location_description": "Linkway Between DTL & EWL",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188966-001",
+    "straight_line_distance_m": 140.3,
+    "walking_distance_m": 189.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "InterContinental Singapore",
+    "location_description": "Level 1 Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188966-002",
+    "straight_line_distance_m": 140.3,
+    "walking_distance_m": 189.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "InterContinental Singapore",
+    "location_description": "Level 3 Gym",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188966-003",
+    "straight_line_distance_m": 148.2,
+    "walking_distance_m": 200.1,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "InterContinental Singapore",
+    "location_description": "Level 1 Front Desk Office",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188476-002",
+    "straight_line_distance_m": 157.9,
+    "walking_distance_m": 213.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Bugis MRT Station",
+    "location_description": "Near Passenger Service Centre (DTL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188067-001",
+    "straight_line_distance_m": 159.0,
+    "walking_distance_m": 214.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Bugis+",
+    "location_description": "Level 1 Customer Service Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188067-002",
+    "straight_line_distance_m": 159.0,
+    "walking_distance_m": 214.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Bugis+",
+    "location_description": "Level 1 Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S01",
+    "aed_id": "188067-003",
+    "straight_line_distance_m": 159.0,
+    "walking_distance_m": 214.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Bugis+",
+    "location_description": "Level 1 Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310490-002",
+    "straight_line_distance_m": 50.0,
+    "walking_distance_m": 67.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "HDB Hub",
+    "location_description": "Level 7 Central Singapore CDC (Social Service Office)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "08:30",
+          "18:00"
+        ],
+        "TUE": [
+          "08:30",
+          "18:00"
+        ],
+        "WED": [
+          "08:30",
+          "18:00"
+        ],
+        "THU": [
+          "08:30",
+          "18:00"
+        ],
+        "FRI": [
+          "08:30",
+          "18:00"
+        ],
+        "SAT": null,
+        "SUN": null
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Fri 08:30-18:00; Sat - Sun Closed;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310490-001",
+    "straight_line_distance_m": 50.0,
+    "walking_distance_m": 67.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "HDB Hub",
+    "location_description": "Level 7 Central Singapore CDC (Office Entrance)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "08:30",
+          "18:00"
+        ],
+        "TUE": [
+          "08:30",
+          "18:00"
+        ],
+        "WED": [
+          "08:30",
+          "18:00"
+        ],
+        "THU": [
+          "08:30",
+          "18:00"
+        ],
+        "FRI": [
+          "08:30",
+          "18:00"
+        ],
+        "SAT": null,
+        "SUN": null
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Fri 08:30-18:00; Sat - Sun Closed;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "319398-001",
+    "straight_line_distance_m": 61.1,
+    "walking_distance_m": 82.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Toa Payoh MRT Station",
+    "location_description": "Near Passenger Service Centre (NSL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310480-002",
+    "straight_line_distance_m": 73.4,
+    "walking_distance_m": 99.1,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "HDB Hub",
+    "location_description": "Level 2 Pillar Near Seating Area",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310480-003",
+    "straight_line_distance_m": 73.4,
+    "walking_distance_m": 99.1,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "HDB Hub",
+    "location_description": "Level 1 Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310500-001",
+    "straight_line_distance_m": 108.0,
+    "walking_distance_m": 145.8,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 NTUC Fairprice Next To Counter 6",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "07:00",
+          "23:59"
+        ],
+        "TUE": [
+          "07:00",
+          "23:59"
+        ],
+        "WED": [
+          "07:00",
+          "23:59"
+        ],
+        "THU": [
+          "07:00",
+          "23:59"
+        ],
+        "FRI": [
+          "07:00",
+          "23:59"
+        ],
+        "SAT": [
+          "07:00",
+          "23:59"
+        ],
+        "SUN": [
+          "07:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 07:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310530-001",
+    "straight_line_distance_m": 114.1,
+    "walking_distance_m": 154.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Toa Payoh Bus Interchange",
+    "location_description": "Next To Passenger Service Office",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310480-001",
+    "straight_line_distance_m": 122.1,
+    "walking_distance_m": 164.8,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "HDB Hub",
+    "location_description": "Level 1 Security Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "310175-001",
+    "straight_line_distance_m": 125.5,
+    "walking_distance_m": 169.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S02",
+    "aed_id": "900081-001",
+    "straight_line_distance_m": 216.0,
+    "walking_distance_m": 291.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Toa Payoh Town Park",
+    "location_description": "Level 1 Toilet Block",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-005",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 1 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-006",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 2 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-007",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 3 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-008",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 4 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-009",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 5 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-010",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 6 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-011",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 7 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-012",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level 8 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-001",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level B4 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S03",
+    "aed_id": "238801-002",
+    "straight_line_distance_m": 54.4,
+    "walking_distance_m": 73.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "ION Orchard",
+    "location_description": "Level B3 Lift A Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "627753-001",
+    "straight_line_distance_m": 222.8,
+    "walking_distance_m": 300.8,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "629978-001",
+    "straight_line_distance_m": 295.3,
+    "walking_distance_m": 398.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Wartsila Pumps Pte Ltd (First Aid Corner)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "08:30",
+          "18:00"
+        ],
+        "TUE": [
+          "08:30",
+          "18:00"
+        ],
+        "WED": [
+          "08:30",
+          "18:00"
+        ],
+        "THU": [
+          "08:30",
+          "18:00"
+        ],
+        "FRI": [
+          "08:30",
+          "18:00"
+        ],
+        "SAT": null,
+        "SUN": null
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Fri 08:30-18:00; Sat - Sun Closed;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "628631-002",
+    "straight_line_distance_m": 671.9,
+    "walking_distance_m": 907.1,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Staging Floor",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "628631-001",
+    "straight_line_distance_m": 680.9,
+    "walking_distance_m": 919.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Floor Production Walk Way",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "627577-001",
+    "straight_line_distance_m": 729.6,
+    "walking_distance_m": 985.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "P+F GDC Building",
+    "location_description": "Level 1 Warehouse Floor",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "627577-003",
+    "straight_line_distance_m": 729.6,
+    "walking_distance_m": 985.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "P+F GDC Building",
+    "location_description": "Level 3 Outside First Aid Room",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "627577-005",
+    "straight_line_distance_m": 729.6,
+    "walking_distance_m": 985.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "P+F GDC Building",
+    "location_description": "Level 5 Sales Office",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "627577-002",
+    "straight_line_distance_m": 743.7,
+    "walking_distance_m": 1004.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "P+F GDC Building",
+    "location_description": "Level 2 Warehouse Floor",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "627577-004",
+    "straight_line_distance_m": 743.7,
+    "walking_distance_m": 1004.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "P+F GDC Building",
+    "location_description": "Level 4 Production Floor",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S04",
+    "aed_id": "628554-001",
+    "straight_line_distance_m": 802.4,
+    "walking_distance_m": 1083.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Near Reception",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "08:30",
+          "18:00"
+        ],
+        "TUE": [
+          "08:30",
+          "18:00"
+        ],
+        "WED": [
+          "08:30",
+          "18:00"
+        ],
+        "THU": [
+          "08:30",
+          "18:00"
+        ],
+        "FRI": [
+          "08:30",
+          "18:00"
+        ],
+        "SAT": null,
+        "SUN": null
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Fri 08:30-18:00; Sat - Sun Closed;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648886-004",
+    "straight_line_distance_m": 15.7,
+    "walking_distance_m": 21.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jurong Point",
+    "location_description": "Level 1 Inside JP1 CERT Room",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648886-005",
+    "straight_line_distance_m": 15.7,
+    "walking_distance_m": 21.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jurong Point",
+    "location_description": "Level B1 JP1 Near Lift Lobby",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648886-003",
+    "straight_line_distance_m": 15.7,
+    "walking_distance_m": 21.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jurong Point",
+    "location_description": "Level 1 Inside Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648886-001",
+    "straight_line_distance_m": 15.7,
+    "walking_distance_m": 21.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jurong Point",
+    "location_description": "Level 1 Information Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648886-006",
+    "straight_line_distance_m": 84.2,
+    "walking_distance_m": 113.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jurong Point",
+    "location_description": "Level 3 JP2 Information Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648886-007",
+    "straight_line_distance_m": 84.2,
+    "walking_distance_m": 113.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jurong Point",
+    "location_description": "Level 1 Inside JP2 Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648886-002",
+    "straight_line_distance_m": 84.2,
+    "walking_distance_m": 113.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jurong Point",
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648330-001",
+    "straight_line_distance_m": 88.4,
+    "walking_distance_m": 119.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Boon Lay Bus Interchange",
+    "location_description": "Near Passenger Service Office",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "648331-001",
+    "straight_line_distance_m": 113.8,
+    "walking_distance_m": 153.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Boon Lay Bus Interchange",
+    "location_description": "Level 3 NTUC Fairprice Customer Service Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S05",
+    "aed_id": "649846-001",
+    "straight_line_distance_m": 129.8,
+    "walking_distance_m": 175.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Boon Lay MRT Station",
+    "location_description": "Near Passenger Service Centre (EWL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760755-001",
+    "straight_line_distance_m": 77.9,
+    "walking_distance_m": 105.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760729-001",
+    "straight_line_distance_m": 96.1,
+    "walking_distance_m": 129.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760759-001",
+    "straight_line_distance_m": 126.3,
+    "walking_distance_m": 170.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760726-001",
+    "straight_line_distance_m": 136.5,
+    "walking_distance_m": 184.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760730-001",
+    "straight_line_distance_m": 137.2,
+    "walking_distance_m": 185.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760761-001",
+    "straight_line_distance_m": 157.4,
+    "walking_distance_m": 212.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760748-001",
+    "straight_line_distance_m": 205.5,
+    "walking_distance_m": 277.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760762-001",
+    "straight_line_distance_m": 205.9,
+    "walking_distance_m": 278.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "760770-001",
+    "straight_line_distance_m": 213.9,
+    "walking_distance_m": 288.8,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S06",
+    "aed_id": "768515-001",
+    "straight_line_distance_m": 227.5,
+    "walking_distance_m": 307.1,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Jiemin Primary School",
+    "location_description": "Level 1 General Office (Available During School Operating Hours. Approach Security Officer At Main Gate.)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "07:00",
+          "17:00"
+        ],
+        "TUE": [
+          "07:00",
+          "17:00"
+        ],
+        "WED": [
+          "07:00",
+          "17:00"
+        ],
+        "THU": [
+          "07:00",
+          "17:00"
+        ],
+        "FRI": [
+          "07:00",
+          "17:00"
+        ],
+        "SAT": [
+          "07:00",
+          "17:00"
+        ],
+        "SUN": [
+          "07:00",
+          "17:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 07:00-17:00;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "529510-001",
+    "straight_line_distance_m": 18.0,
+    "walking_distance_m": 24.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Tampines Mall",
+    "location_description": "Level 2 Information Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "529510-003",
+    "straight_line_distance_m": 24.6,
+    "walking_distance_m": 33.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Tampines Mall",
+    "location_description": "Level B1 NTUC Fairprice Next To Self-Checkout Counters",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "08:00",
+          "23:00"
+        ],
+        "TUE": [
+          "08:00",
+          "23:00"
+        ],
+        "WED": [
+          "08:00",
+          "23:00"
+        ],
+        "THU": [
+          "08:00",
+          "23:00"
+        ],
+        "FRI": [
+          "08:00",
+          "23:00"
+        ],
+        "SAT": [
+          "08:00",
+          "23:00"
+        ],
+        "SUN": [
+          "08:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 08:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "529510-002",
+    "straight_line_distance_m": 50.6,
+    "walking_distance_m": 68.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Tampines Mall",
+    "location_description": "Level 1 Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "529538-001",
+    "straight_line_distance_m": 89.3,
+    "walking_distance_m": 120.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Tampines MRT Station",
+    "location_description": "Near Passenger Service Centre (EWL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "529509-001",
+    "straight_line_distance_m": 102.1,
+    "walking_distance_m": 137.8,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Century Square",
+    "location_description": "Level 2 Information Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "521156-001",
+    "straight_line_distance_m": 109.4,
+    "walking_distance_m": 147.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "529508-001",
+    "straight_line_distance_m": 125.6,
+    "walking_distance_m": 169.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "CPF Tampines Building",
+    "location_description": "Level 1 Fire Command Centre",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "521151-001",
+    "straight_line_distance_m": 149.3,
+    "walking_distance_m": 201.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby D",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "521158-001",
+    "straight_line_distance_m": 182.9,
+    "walking_distance_m": 246.9,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S07",
+    "aed_id": "529536-001",
+    "straight_line_distance_m": 193.8,
+    "walking_distance_m": 261.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Tampines One",
+    "location_description": "Level B1 Customer Service Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "059443-001",
+    "straight_line_distance_m": 105.6,
+    "walking_distance_m": 142.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Chinatown MRT Station",
+    "location_description": "Near Passenger Service Centre (NEL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "058362-001",
+    "straight_line_distance_m": 131.6,
+    "walking_distance_m": 177.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Chinatown MRT Station",
+    "location_description": "Near Passenger Service Centre (DTL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "07:00",
+          "17:00"
+        ],
+        "TUE": [
+          "07:00",
+          "17:00"
+        ],
+        "WED": [
+          "07:00",
+          "17:00"
+        ],
+        "THU": [
+          "07:00",
+          "17:00"
+        ],
+        "FRI": [
+          "07:00",
+          "17:00"
+        ],
+        "SAT": [
+          "07:00",
+          "17:00"
+        ],
+        "SUN": [
+          "07:00",
+          "17:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 07:00-17:00;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "051335-001",
+    "straight_line_distance_m": 147.3,
+    "walking_distance_m": 198.9,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 3 Yong-en Care Centre, Oasis Hall",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "08:30",
+          "18:00"
+        ],
+        "TUE": [
+          "08:30",
+          "18:00"
+        ],
+        "WED": [
+          "08:30",
+          "18:00"
+        ],
+        "THU": [
+          "08:30",
+          "18:00"
+        ],
+        "FRI": [
+          "08:30",
+          "18:00"
+        ],
+        "SAT": null,
+        "SUN": null
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Fri 08:30-18:00; Sat - Sun Closed;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "058945-001",
+    "straight_line_distance_m": 154.5,
+    "walking_distance_m": 208.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "HomeTeamNS Chinatown",
+    "location_description": "Level 1 Near Customer Service Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "11:00",
+          "23:00"
+        ],
+        "TUE": [
+          "11:00",
+          "23:00"
+        ],
+        "WED": [
+          "11:00",
+          "23:00"
+        ],
+        "THU": [
+          "11:00",
+          "23:00"
+        ],
+        "FRI": [
+          "11:00",
+          "23:00"
+        ],
+        "SAT": [
+          "11:00",
+          "23:00"
+        ],
+        "SUN": [
+          "11:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 11:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "059413-002",
+    "straight_line_distance_m": 162.5,
+    "walking_distance_m": 219.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Chinatown Point",
+    "location_description": "Level 21 Outside Vallourec Office",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "050533-001",
+    "straight_line_distance_m": 172.8,
+    "walking_distance_m": 233.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "059413-001",
+    "straight_line_distance_m": 199.1,
+    "walking_distance_m": 268.8,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Chinatown Point",
+    "location_description": "Level 2 Concierge Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "051335-002",
+    "straight_line_distance_m": 210.6,
+    "walking_distance_m": 284.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "050532-001",
+    "straight_line_distance_m": 215.0,
+    "walking_distance_m": 290.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S08",
+    "aed_id": "050032-001",
+    "straight_line_distance_m": 218.9,
+    "walking_distance_m": 295.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "828761-002",
+    "straight_line_distance_m": 36.3,
+    "walking_distance_m": 49.0,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Waterway Point",
+    "location_description": "Level 1 East Wing, Near Customer Service Counter",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "828761-001",
+    "straight_line_distance_m": 45.4,
+    "walking_distance_m": 61.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Waterway Point",
+    "location_description": "Level 1 West Wing, Fire Command Center",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "10:00",
+          "23:00"
+        ],
+        "TUE": [
+          "10:00",
+          "23:00"
+        ],
+        "WED": [
+          "10:00",
+          "23:00"
+        ],
+        "THU": [
+          "10:00",
+          "23:00"
+        ],
+        "FRI": [
+          "10:00",
+          "23:00"
+        ],
+        "SAT": [
+          "10:00",
+          "23:00"
+        ],
+        "SUN": [
+          "10:00",
+          "23:00"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 10:00-23:00;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "821308-001",
+    "straight_line_distance_m": 192.8,
+    "walking_distance_m": 260.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby 2-C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "828868-001",
+    "straight_line_distance_m": 245.8,
+    "walking_distance_m": 331.8,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": "Punggol MRT Station",
+    "location_description": "Near Passenger Service Centre (NEL)",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "05:30",
+          "23:59"
+        ],
+        "TUE": [
+          "05:30",
+          "23:59"
+        ],
+        "WED": [
+          "05:30",
+          "23:59"
+        ],
+        "THU": [
+          "05:30",
+          "23:59"
+        ],
+        "FRI": [
+          "05:30",
+          "23:59"
+        ],
+        "SAT": [
+          "05:30",
+          "23:59"
+        ],
+        "SUN": [
+          "05:30",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 05:30-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "821310-001",
+    "straight_line_distance_m": 284.5,
+    "walking_distance_m": 384.1,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby D",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "822308-001",
+    "straight_line_distance_m": 285.3,
+    "walking_distance_m": 385.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby 5-C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "823271-001",
+    "straight_line_distance_m": 303.3,
+    "walking_distance_m": 409.5,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "823308-002",
+    "straight_line_distance_m": 334.3,
+    "walking_distance_m": 451.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby 7-C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "821302-001",
+    "straight_line_distance_m": 347.1,
+    "walking_distance_m": 468.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S09",
+    "aed_id": "822310-001",
+    "straight_line_distance_m": 351.6,
+    "walking_distance_m": 474.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "562310-001",
+    "straight_line_distance_m": 157.7,
+    "walking_distance_m": 212.9,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A B & C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "570254-001",
+    "straight_line_distance_m": 192.0,
+    "walking_distance_m": 259.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby D",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "563310-001",
+    "straight_line_distance_m": 192.1,
+    "walking_distance_m": 259.3,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A B & C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "570251-001",
+    "straight_line_distance_m": 199.0,
+    "walking_distance_m": 268.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "561308-001",
+    "straight_line_distance_m": 221.0,
+    "walking_distance_m": 298.4,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A B & C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "560208-001",
+    "straight_line_distance_m": 231.0,
+    "walking_distance_m": 311.9,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "570248-001",
+    "straight_line_distance_m": 241.9,
+    "walking_distance_m": 326.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "560218-001",
+    "straight_line_distance_m": 254.6,
+    "walking_distance_m": 343.7,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby A",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "560207-001",
+    "straight_line_distance_m": 261.9,
+    "walking_distance_m": 353.6,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby B",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  },
+  {
+    "scenario_id": "S10",
+    "aed_id": "562309-001",
+    "straight_line_distance_m": 264.6,
+    "walking_distance_m": 357.2,
+    "walking_distance_method": "detour_factor_estimate_1.35x",
+    "building_name": null,
+    "location_description": "Level 1 Lift Lobby C",
+    "parsed_hours": {
+      "status": "parsed",
+      "confidence": "high",
+      "schedule": {
+        "MON": [
+          "00:00",
+          "23:59"
+        ],
+        "TUE": [
+          "00:00",
+          "23:59"
+        ],
+        "WED": [
+          "00:00",
+          "23:59"
+        ],
+        "THU": [
+          "00:00",
+          "23:59"
+        ],
+        "FRI": [
+          "00:00",
+          "23:59"
+        ],
+        "SAT": [
+          "00:00",
+          "23:59"
+        ],
+        "SUN": [
+          "00:00",
+          "23:59"
+        ]
+      },
+      "has_remarks": false,
+      "remark_type": null,
+      "raw": "Mon - Sun 00:00-23:59;"
+    }
+  }
+]
