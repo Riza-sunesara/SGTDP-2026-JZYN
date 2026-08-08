@@ -4,6 +4,7 @@
 
 export type ScenarioInput = {
   location: string;
+  dayOfWeek: string; // "Monday".."Sunday" — from the dropdown, always this exact set
   time: string; // "HH:mm"
 };
 

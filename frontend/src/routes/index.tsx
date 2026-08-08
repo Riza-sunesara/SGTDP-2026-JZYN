@@ -10,7 +10,7 @@ import { AlertModal } from "@/components/aed/AlertModal";
 import { Footer } from "@/components/aed/Footer";
 import { useScenarioAnalysis } from "@/lib/aed/useScenarioAnalysis";
 
-const TITLE = "AED Insight — Simulation-Based AED Decision Support";
+const TITLE = "AED InsightSimulation — Based AED Decision Support";
 const DESCRIPTION =
   "AED Insight ranks candidate AED locations using historical accessibility, operating-hours data, distance and location confidence for planning and preparedness simulations.";
 
@@ -32,11 +32,13 @@ export default Index;
 
 function Index() {
   const [location, setLocation] = useState("");
+  const [dayOfWeek, setDayOfWeek] = useState("");
   const [time, setTime] = useState("");
   const { status, result, error, run, retry, reset, dismissError } = useScenarioAnalysis();
 
   const handleReset = () => {
     setLocation("");
+    setDayOfWeek("");
     setTime("");
     reset();
   };
@@ -56,7 +58,7 @@ function Index() {
               Try It Now
             </h2>
             <p className="mx-auto mt-2 max-w-xl text-center text-sm text-foreground">
-              Enter a simulated location and time to see how candidate AEDs are ranked.
+              Enter a simulated location, day, and time to see how candidate AEDs are ranked.
             </p>
 
             <div className="mt-8">
@@ -65,8 +67,10 @@ function Index() {
                 onSubmit={run}
                 onReset={handleReset}
                 location={location}
+                dayOfWeek={dayOfWeek}
                 time={time}
                 setLocation={setLocation}
+                setDayOfWeek={setDayOfWeek}
                 setTime={setTime}
               />
             </div>

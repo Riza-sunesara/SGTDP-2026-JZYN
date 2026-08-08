@@ -2,13 +2,25 @@ import { useState, type FormEvent } from "react";
 import { AlertCircle, Loader2 } from "lucide-react";
 import type { ScenarioInput } from "@/lib/aed/types";
 
+const DAYS_OF_WEEK = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+] as const;
+
 type Props = {
   loading: boolean;
   onSubmit: (input: ScenarioInput) => void;
   onReset: () => void;
   location: string;
+  dayOfWeek: string;
   time: string;
   setLocation: (value: string) => void;
+  setDayOfWeek: (value: string) => void;
   setTime: (value: string) => void;
 };
 
@@ -17,12 +29,15 @@ export function ScenarioForm({
   onSubmit,
   onReset,
   location,
+  dayOfWeek,
   time,
   setLocation,
+  setDayOfWeek,
   setTime,
 }: Props) {
   const [errors, setErrors] = useState<{
     location?: string | undefined;
+    dayOfWeek?: string | undefined;
     time?: string | undefined;
   }>({});
 
@@ -30,13 +45,14 @@ export function ScenarioForm({
     event.preventDefault();
     if (loading) return;
 
-    const next: { location?: string; time?: string } = {};
+    const next: { location?: string; dayOfWeek?: string; time?: string } = {};
     if (!location.trim()) next.location = "Please enter a location.";
+    if (!dayOfWeek) next.dayOfWeek = "Please select a day.";
     if (!time) next.time = "Please select a time.";
     setErrors(next);
     if (Object.keys(next).length > 0) return;
 
-    onSubmit({ location: location.trim(), time });
+    onSubmit({ location: location.trim(), dayOfWeek, time });
   };
 
   const handleReset = () => {
@@ -50,7 +66,7 @@ export function ScenarioForm({
       noValidate
       className="mx-auto w-full max-w-2xl rounded-2xl border border-border bg-card p-6 sm:p-8"
     >
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid gap-5">
         <div className="min-w-0">
           <label htmlFor="location" className="block text-sm font-medium text-heading">
             Location
@@ -80,32 +96,70 @@ export function ScenarioForm({
           )}
         </div>
 
-        <div className="min-w-0">
-          <label htmlFor="time" className="block text-sm font-medium text-heading">
-            Simulated time
-          </label>
-          <input
-            id="time"
-            name="time"
-            type="time"
-            value={time}
-            onChange={(e) => {
-              setTime(e.target.value);
-              if (errors.time) setErrors((p) => ({ ...p, time: undefined }));
-            }}
-            aria-invalid={Boolean(errors.time)}
-            aria-describedby={errors.time ? "time-error" : undefined}
-            className="mt-2 w-full rounded-lg border border-border bg-white px-3 py-2.5 text-sm text-heading focus:border-primary focus:outline-none"
-          />
-          {errors.time && (
-            <p
-              id="time-error"
-              className="mt-2 flex items-center gap-1.5 text-xs font-medium text-destructive"
+        <div className="grid gap-5 sm:grid-cols-2">
+          <div className="min-w-0">
+            <label htmlFor="dayOfWeek" className="block text-sm font-medium text-heading">
+              Day of week
+            </label>
+            <select
+              id="dayOfWeek"
+              name="dayOfWeek"
+              value={dayOfWeek}
+              onChange={(e) => {
+                setDayOfWeek(e.target.value);
+                if (errors.dayOfWeek) setErrors((p) => ({ ...p, dayOfWeek: undefined }));
+              }}
+              aria-invalid={Boolean(errors.dayOfWeek)}
+              aria-describedby={errors.dayOfWeek ? "dayOfWeek-error" : undefined}
+              className="mt-2 w-full rounded-lg border border-border bg-white px-3 py-2.5 text-sm text-heading focus:border-primary focus:outline-none"
             >
-              <AlertCircle className="size-3.5 shrink-0" aria-hidden />
-              {errors.time}
-            </p>
-          )}
+              <option value="" disabled>
+                Select a day
+              </option>
+              {DAYS_OF_WEEK.map((day) => (
+                <option key={day} value={day}>
+                  {day}
+                </option>
+              ))}
+            </select>
+            {errors.dayOfWeek && (
+              <p
+                id="dayOfWeek-error"
+                className="mt-2 flex items-center gap-1.5 text-xs font-medium text-destructive"
+              >
+                <AlertCircle className="size-3.5 shrink-0" aria-hidden />
+                {errors.dayOfWeek}
+              </p>
+            )}
+          </div>
+
+          <div className="min-w-0">
+            <label htmlFor="time" className="block text-sm font-medium text-heading">
+              Simulated time
+            </label>
+            <input
+              id="time"
+              name="time"
+              type="time"
+              value={time}
+              onChange={(e) => {
+                setTime(e.target.value);
+                if (errors.time) setErrors((p) => ({ ...p, time: undefined }));
+              }}
+              aria-invalid={Boolean(errors.time)}
+              aria-describedby={errors.time ? "time-error" : undefined}
+              className="mt-2 w-full rounded-lg border border-border bg-white px-3 py-2.5 text-sm text-heading focus:border-primary focus:outline-none"
+            />
+            {errors.time && (
+              <p
+                id="time-error"
+                className="mt-2 flex items-center gap-1.5 text-xs font-medium text-destructive"
+              >
+                <AlertCircle className="size-3.5 shrink-0" aria-hidden />
+                {errors.time}
+              </p>
+            )}
+          </div>
         </div>
       </div>
 

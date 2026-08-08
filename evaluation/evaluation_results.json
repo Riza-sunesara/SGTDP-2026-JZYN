@@ -2,12 +2,12 @@
   "metrics": {
     "primary_top3_feasible_recall": 1.0,
     "safety_baseline_false_accessible_rate": 0.3,
-    "performance_p95_latency_ms": 0.323,
+    "performance_p95_latency_ms": 0.395,
     "supporting_avg_distance_m": {
-      "system_walking_adjusted": 110.8,
-      "baseline_straight_line": 81.0
+      "system_walking_adjusted": 99.2,
+      "baseline_straight_line": 72.8
     },
-    "performance_median_latency_ms": 0.199
+    "performance_median_latency_ms": 0.369
   },
   "per_scenario": [
     {
@@ -29,7 +29,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 2.691
+      "latency_ms": 0.359
     },
     {
       "scenario_id": "S02",
@@ -53,7 +53,7 @@
         "310490-002",
         "310490-001"
       ],
-      "latency_ms": 0.37
+      "latency_ms": 0.19
     },
     {
       "scenario_id": "S03",
@@ -74,7 +74,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.41
+      "latency_ms": 0.241
     },
     {
       "scenario_id": "S04",
@@ -97,7 +97,7 @@
       "baseline_false_accessible_aeds": [
         "629978-001"
       ],
-      "latency_ms": 0.32
+      "latency_ms": 0.201
     },
     {
       "scenario_id": "S05",
@@ -118,7 +118,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 2.366
+      "latency_ms": 0.228
     },
     {
       "scenario_id": "S06",
@@ -139,7 +139,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.361
+      "latency_ms": 0.216
     },
     {
       "scenario_id": "S07",
@@ -160,7 +160,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 2.726
+      "latency_ms": 0.212
     },
     {
       "scenario_id": "S08",
@@ -184,7 +184,7 @@
         "058362-001",
         "051335-001"
       ],
-      "latency_ms": 0.526
+      "latency_ms": 0.248
     },
     {
       "scenario_id": "S09",
@@ -205,7 +205,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 1.282
+      "latency_ms": 0.226
     },
     {
       "scenario_id": "S10",
@@ -226,7 +226,225 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 1.057
+      "latency_ms": 0.215
+    },
+    {
+      "scenario_id": "S11",
+      "location": "Marina Bay Sands",
+      "day_time": "Friday 21:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "018971-003",
+        "018971-004",
+        "018971-002"
+      ],
+      "baseline_top3": [
+        "018971-003",
+        "018971-004",
+        "018971-002"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.211
+    },
+    {
+      "scenario_id": "S12",
+      "location": "Sentosa Beach Station",
+      "day_time": "Saturday 14:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "099024-001",
+        "099024-002",
+        "099957-001"
+      ],
+      "baseline_top3": [
+        "099024-001",
+        "099024-002",
+        "099957-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.279
+    },
+    {
+      "scenario_id": "S13",
+      "location": "Woodlands Checkpoint",
+      "day_time": "Monday 07:30",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "738937-001",
+        "738937-002",
+        "730024-001"
+      ],
+      "baseline_top3": [
+        "738937-001",
+        "738937-002",
+        "730024-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.215
+    },
+    {
+      "scenario_id": "S14",
+      "location": "Clementi Town Centre",
+      "day_time": "Tuesday 18:30",
+      "total_candidates": 10,
+      "feasible_count": 6,
+      "infeasible_count": 4,
+      "system_top3": [
+        "129580-001",
+        "120441-001",
+        "129588-001"
+      ],
+      "baseline_top3": [
+        "129580-001",
+        "120441-001",
+        "129588-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.213
+    },
+    {
+      "scenario_id": "S15",
+      "location": "Serangoon NEX Mall",
+      "day_time": "Sunday 16:00",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "556083-003",
+        "556138-001",
+        "556083-002"
+      ],
+      "baseline_top3": [
+        "556083-003",
+        "556138-001",
+        "556083-002"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.22
+    },
+    {
+      "scenario_id": "S16",
+      "location": "Bukit Timah Nature Reserve",
+      "day_time": "Saturday 08:00",
+      "total_candidates": 10,
+      "feasible_count": 9,
+      "infeasible_count": 1,
+      "system_top3": [
+        "589333-002",
+        "589333-001",
+        "589333-004"
+      ],
+      "baseline_top3": [
+        "589333-002",
+        "589333-001",
+        "589333-004"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.232
+    },
+    {
+      "scenario_id": "S17",
+      "location": "Queenstown (Dawson)",
+      "day_time": "Wednesday 12:30",
+      "total_candidates": 10,
+      "feasible_count": 10,
+      "infeasible_count": 0,
+      "system_top3": [
+        "149297-001",
+        "149303-003",
+        "149303-001"
+      ],
+      "baseline_top3": [
+        "149297-001",
+        "149303-003",
+        "149303-001"
+      ],
+      "baseline_false_accessible_count": 0,
+      "baseline_false_accessible_aeds": [],
+      "latency_ms": 0.219
+    },
+    {
+      "scenario_id": "S18",
+      "location": "Novena Square",
+      "day_time": "Thursday 23:30",
+      "total_candidates": 10,
+      "feasible_count": 4,
+      "infeasible_count": 6,
+      "system_top3": [
+        "307642-001",
+        "307470-002",
+        "307470-003"
+      ],
+      "baseline_top3": [
+        "307683-002",
+        "307642-001",
+        "307506-003"
+      ],
+      "baseline_false_accessible_count": 2,
+      "baseline_false_accessible_aeds": [
+        "307683-002",
+        "307506-003"
+      ],
+      "latency_ms": 0.211
+    },
+    {
+      "scenario_id": "S19",
+      "location": "Pasir Ris Park",
+      "day_time": "Sunday 06:00",
+      "total_candidates": 10,
+      "feasible_count": 3,
+      "infeasible_count": 7,
+      "system_top3": [
+        "900013-002",
+        "519599-004",
+        "900013-004"
+      ],
+      "baseline_top3": [
+        "900013-002",
+        "519599-004",
+        "519599-006"
+      ],
+      "baseline_false_accessible_count": 1,
+      "baseline_false_accessible_aeds": [
+        "519599-006"
+      ],
+      "latency_ms": 0.209
+    },
+    {
+      "scenario_id": "S20",
+      "location": "Boon Lay (Nanyang area)",
+      "day_time": "Friday 22:00",
+      "total_candidates": 10,
+      "feasible_count": 8,
+      "infeasible_count": 2,
+      "system_top3": [
+        "639798-036",
+        "637458-002",
+        "637458-001"
+      ],
+      "baseline_top3": [
+        "637662-001",
+        "637662-002",
+        "639798-036"
+      ],
+      "baseline_false_accessible_count": 2,
+      "baseline_false_accessible_aeds": [
+        "637662-001",
+        "637662-002"
+      ],
+      "latency_ms": 0.22
     }
   ]
 }
