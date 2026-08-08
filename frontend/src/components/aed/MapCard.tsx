@@ -1,5 +1,7 @@
-import { MapPin, HeartPulse, Navigation } from "lucide-react";
+import { useMemo } from "react";
+import { CircleMarker, MapContainer, Polyline, Popup, TileLayer } from "react-leaflet";
 import type { AedCandidate, GeoPoint } from "@/lib/aed/types";
+import "leaflet/dist/leaflet.css";
 
 type Props = {
   userPoint: GeoPoint;
@@ -8,32 +10,26 @@ type Props = {
   route: GeoPoint[] | null;
 };
 
-/**
- * Mock map surface. The prop shape matches what a Leaflet/OpenStreetMap
- * implementation will need (points + a single route polyline).
- */
 export function MapCard({ userPoint, candidates, recommendation, route }: Props) {
-  const points = [userPoint, ...candidates.map((c) => c.point)];
-  const lats = points.map((p) => p.lat);
-  const lngs = points.map((p) => p.lng);
-  const pad = 0.0015;
-  const minLat = Math.min(...lats) - pad;
-  const maxLat = Math.max(...lats) + pad;
-  const minLng = Math.min(...lngs) - pad;
-  const maxLng = Math.max(...lngs) + pad;
+  const remainingCandidates = useMemo(
+    () => candidates.filter((candidate) => candidate.id !== recommendation?.id),
+    [candidates, recommendation],
+  );
 
-  const project = (p: GeoPoint) => ({
-    left: `${((p.lng - minLng) / (maxLng - minLng)) * 100}%`,
-    top: `${(1 - (p.lat - minLat) / (maxLat - minLat)) * 100}%`,
-  });
+  const points = useMemo(
+    () => [userPoint, ...remainingCandidates.map((candidate) => candidate.point), ...(recommendation ? [recommendation.point] : [])],
+    [remainingCandidates, recommendation, userPoint],
+  );
 
-  const routePath = route
-    ?.map((p, i) => {
-      const x = ((p.lng - minLng) / (maxLng - minLng)) * 100;
-      const y = (1 - (p.lat - minLat) / (maxLat - minLat)) * 100;
-      return `${i === 0 ? "M" : "L"}${x} ${y}`;
-    })
-    .join(" ");
+  const center = useMemo(() => {
+    if (points.length === 0) {
+      return [1.3, 103.8] as [number, number];
+    }
+
+    const lat = points.reduce((sum, point) => sum + point.lat, 0) / points.length;
+    const lng = points.reduce((sum, point) => sum + point.lng, 0) / points.length;
+    return [lat, lng] as [number, number];
+  }, [points]);
 
   return (
     <section
@@ -41,99 +37,70 @@ export function MapCard({ userPoint, candidates, recommendation, route }: Props)
       className="flex h-full flex-col rounded-2xl border border-border bg-card p-5"
     >
       <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
-        <h3 className="truncate text-base font-semibold text-heading">Simulation Map</h3>
+        <h3 className="truncate text-base font-semibold text-heading">Scenario Map</h3>
         <span className="shrink-0 rounded-full border border-border bg-white px-2.5 py-1 text-[11px] font-medium text-primary">
-          Visualization only
+          Estimated straight-line distance
         </span>
       </div>
 
-      <div className="relative mt-4 min-h-[240px] w-full flex-1 overflow-hidden rounded-xl border border-divider bg-[color:var(--muted)]">
-        <svg
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          className="absolute inset-0 h-full w-full"
-          aria-hidden
-        >
-          <g stroke="#d3ecee" strokeWidth="2.5" fill="none">
-            <path d="M0 22 H100" />
-            <path d="M0 55 H100" />
-            <path d="M0 82 H100" />
-            <path d="M20 0 V100" />
-            <path d="M55 0 V100" />
-            <path d="M82 0 V100" />
-          </g>
-          {routePath && (
-            <path
-              d={routePath}
-              fill="none"
-              stroke="#0b6470"
-              strokeWidth="1.6"
-              strokeDasharray="3 2.4"
-              strokeLinecap="round"
-              vectorEffect="non-scaling-stroke"
+      <div className="relative mt-4 min-h-72 w-full flex-1 overflow-hidden rounded-xl border border-divider">
+        <MapContainer center={center} zoom={14} scrollWheelZoom className="relative h-full w-full z-0">
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+
+          <CircleMarker center={[userPoint.lat, userPoint.lng]} radius={9} pathOptions={{ color: "#0f766e", fillColor: "#0f766e", fillOpacity: 0.95 }}>
+            <Popup>Requested location</Popup>
+          </CircleMarker>
+
+          {recommendation && (
+            <CircleMarker
+              center={[recommendation.point.lat, recommendation.point.lng]}
+              radius={9}
+              pathOptions={{ color: "#16a34a", fillColor: "#16a34a", fillOpacity: 0.95 }}
+            >
+              <Popup>{recommendation.name}</Popup>
+            </CircleMarker>
+          )}
+
+          {remainingCandidates.map((candidate) => (
+            <CircleMarker
+              key={candidate.id}
+              center={[candidate.point.lat, candidate.point.lng]}
+              radius={7}
+              pathOptions={{ color: "#64748b", fillColor: "#64748b", fillOpacity: 0.8 }}
+            >
+              <Popup>{candidate.name}</Popup>
+            </CircleMarker>
+          ))}
+
+          {route && route.length >= 2 && (
+            <Polyline
+              positions={route.map((point) => [point.lat, point.lng])}
+              pathOptions={{ color: "#0f766e", weight: 3, dashArray: "6 4", opacity: 0.8 }}
             />
           )}
-        </svg>
-
-        <div
-          style={project(userPoint)}
-          className="absolute flex size-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-primary shadow"
-          title="Simulated test location"
-        >
-          <Navigation className="size-4 text-primary-foreground" aria-hidden />
-        </div>
-
-        {candidates.map((candidate) => {
-          const isTop = recommendation?.id === candidate.id;
-          return (
-            <div
-              key={candidate.id}
-              style={project(candidate.point)}
-              className="absolute -translate-x-1/2 -translate-y-1/2 text-center"
-              title={candidate.name}
-            >
-              <span
-                className={
-                  isTop
-                    ? "flex size-9 items-center justify-center rounded-full border-2 border-white bg-[color:var(--success)] shadow-lg"
-                    : "flex size-7 items-center justify-center rounded-full border border-border bg-white text-primary shadow-sm"
-                }
-              >
-                {isTop ? (
-                  <MapPin className="size-4 text-white" aria-hidden />
-                ) : (
-                  <HeartPulse className="size-3.5" aria-hidden />
-                )}
-              </span>
-              {isTop && (
-                <span className="mt-1 inline-block rounded-full bg-white px-2 py-0.5 text-[10px] font-semibold text-heading shadow-sm">
-                  Rank #1
-                </span>
-              )}
-            </div>
-          );
-        })}
+        </MapContainer>
       </div>
 
       <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-foreground">
         <li className="flex items-center gap-1.5">
-          <span className="size-2.5 rounded-full bg-primary" aria-hidden /> Test location
+          <span className="size-2.5 rounded-full bg-[color:#0f766e]" aria-hidden /> Requested location
         </li>
         <li className="flex items-center gap-1.5">
-          <span className="size-2.5 rounded-full bg-[color:var(--success)]" aria-hidden />{" "}
-          Recommended AED
+          <span className="size-2.5 rounded-full bg-[color:#16a34a]" aria-hidden /> Recommended AED
         </li>
         <li className="flex items-center gap-1.5">
-          <span className="size-2.5 rounded-full border border-border bg-white" aria-hidden />{" "}
-          Candidate AED
+          <span className="size-2.5 rounded-full bg-[color:#64748b]" aria-hidden /> Other candidates
         </li>
       </ul>
 
-      {!route && (
-        <p className="mt-3 rounded-lg border border-[color:var(--warning)]/40 bg-white px-3 py-2 text-xs font-medium text-[color:var(--warning)]">
-          Route could not be generated for this scenario.
-        </p>
-      )}
+      <p className="mt-3 rounded-lg border border-(--warning)/40 bg-white px-3 py-2 text-xs font-medium text-warning">
+        {route && route.length >= 2
+          ? "This line is an estimated straight-line distance between points, not a street-routing path."
+          : "No straight-line route was returned for this scenario."}
+      </p>
     </section>
   );
 }

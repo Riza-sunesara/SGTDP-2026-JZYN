@@ -2,12 +2,12 @@
   "metrics": {
     "primary_top3_feasible_recall": 1.0,
     "safety_baseline_false_accessible_rate": 0.3,
-    "performance_p95_latency_ms": 0.395,
+    "performance_p95_latency_ms": 0.445,
     "supporting_avg_distance_m": {
       "system_walking_adjusted": 99.2,
       "baseline_straight_line": 72.8
     },
-    "performance_median_latency_ms": 0.369
+    "performance_median_latency_ms": 0.238
   },
   "per_scenario": [
     {
@@ -29,7 +29,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.359
+      "latency_ms": 0.382
     },
     {
       "scenario_id": "S02",
@@ -53,7 +53,7 @@
         "310490-002",
         "310490-001"
       ],
-      "latency_ms": 0.19
+      "latency_ms": 0.192
     },
     {
       "scenario_id": "S03",
@@ -74,7 +74,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.241
+      "latency_ms": 0.22
     },
     {
       "scenario_id": "S04",
@@ -97,7 +97,7 @@
       "baseline_false_accessible_aeds": [
         "629978-001"
       ],
-      "latency_ms": 0.201
+      "latency_ms": 0.184
     },
     {
       "scenario_id": "S05",
@@ -118,7 +118,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.228
+      "latency_ms": 0.25
     },
     {
       "scenario_id": "S06",
@@ -139,7 +139,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.216
+      "latency_ms": 0.223
     },
     {
       "scenario_id": "S07",
@@ -160,7 +160,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.212
+      "latency_ms": 0.215
     },
     {
       "scenario_id": "S08",
@@ -184,7 +184,7 @@
         "058362-001",
         "051335-001"
       ],
-      "latency_ms": 0.248
+      "latency_ms": 0.22
     },
     {
       "scenario_id": "S09",
@@ -226,7 +226,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.215
+      "latency_ms": 0.213
     },
     {
       "scenario_id": "S11",
@@ -247,7 +247,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.211
+      "latency_ms": 0.215
     },
     {
       "scenario_id": "S12",
@@ -268,7 +268,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.279
+      "latency_ms": 0.219
     },
     {
       "scenario_id": "S13",
@@ -289,7 +289,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.215
+      "latency_ms": 0.224
     },
     {
       "scenario_id": "S14",
@@ -310,7 +310,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.213
+      "latency_ms": 0.214
     },
     {
       "scenario_id": "S15",
@@ -331,7 +331,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.22
+      "latency_ms": 0.213
     },
     {
       "scenario_id": "S16",
@@ -352,7 +352,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.232
+      "latency_ms": 0.222
     },
     {
       "scenario_id": "S17",
@@ -373,7 +373,7 @@
       ],
       "baseline_false_accessible_count": 0,
       "baseline_false_accessible_aeds": [],
-      "latency_ms": 0.219
+      "latency_ms": 0.267
     },
     {
       "scenario_id": "S18",
@@ -397,7 +397,7 @@
         "307683-002",
         "307506-003"
       ],
-      "latency_ms": 0.211
+      "latency_ms": 0.342
     },
     {
       "scenario_id": "S19",
@@ -420,7 +420,7 @@
       "baseline_false_accessible_aeds": [
         "519599-006"
       ],
-      "latency_ms": 0.209
+      "latency_ms": 0.223
     },
     {
       "scenario_id": "S20",
@@ -444,7 +444,7 @@
         "637662-001",
         "637662-002"
       ],
-      "latency_ms": 0.22
+      "latency_ms": 0.216
     }
   ]
 }

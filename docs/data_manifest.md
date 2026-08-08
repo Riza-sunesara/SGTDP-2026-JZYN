@@ -1,118 +1,64 @@
 # Data Manifest
 
-## Core dataset (mandatory)
+## Primary source
 
-| Field | Value |
-|---|---|
-| Name | SCDF Public Access AEDs |
-| Source URL | https://data.gov.sg/datasets/d_4e6b82c58a8a832f6f1fee5dfa6d47ea/view |
-| Publisher | Singapore Civil Defence Force (SCDF), via data.gov.sg |
-| Underlying data date | February 2020 (per brief) |
-| Retrieval / download date | [fill in — the day you downloaded it] |
-| License | [check data.gov.sg page — usually Singapore Open Data Licence] |
-| Format | GeoJSON |
-| Total rows | 9,644 |
-| Fields used | OBJECTID, AED_ID, OPERATING_HOURS, HOUSE_NUMBER, ROAD_NAME, BUILDING_NAME, UNIT_NUMBER, POSTAL_CODE, AED_LOCATION_DESCRIPTION, AED_LOCATION_FLOOR_LEVEL, LATITUDE, LONGITUDE |
-| Fields explicitly NOT used | INC_CRC, FMEL_UPD_D, XVAL, YVAL (no authoritative meaning documented per brief's warning) |
-| Transformations applied | OPERATING_HOURS parsed into structured per-day open/close schedules via rule-based regex parser (day-range + time-range grammar); Remarks clauses classified by risk type (see Data Quality Observations below) |
-| Raw file SHA-256 | [paste hash from Step 1 output] |
-| Raw filename | PublicAccessAEDs.geojson |
-| Processed file SHA-256 | [paste hash from Step 5 output] |
-| Processed filename | aed_parsed.geojson |
-| Organizer frozen snapshot version | [fill in ONLY if/when Sofstica releases an official frozen copy — until then: "using public data.gov.sg copy, retrieved [date]"] |
+- **Dataset:** SCDF Public Access AEDs
+- **Publisher:** Singapore Civil Defence Force (SCDF), via data.gov.sg
+- **Underlying data date:** February 2020 (historical registry snapshot, not a live feed)
+- **File used:** `data/raw/PublicAccessAEDs.geojson` (untouched original download)
+- **SHA-256 checksum:** _[paste the hash printed by the notebook's `sha256_of_file()` cell here]_
+- **License/usage:** Public dataset via data.gov.sg; used here strictly as a historical
+  planning/simulation snapshot, per the challenge brief's boundary — not treated as a
+  live or authoritative source of current AED status.
 
-## Supplemental dataset(s)
+## Derived files and their roles
 
-None used. Routing/walking-distance is estimated via a detour-factor
-calculation (see "Cached scenario inputs" below) rather than an external
-supplemental dataset or live routing service.
-
-## Data Quality Observations
-
-Understanding *why* the data looks the way it does, not just running `.isnull()`.
-
-| Field | Missing count | Missing % | Why / how handled |
+| File | Produced by | Purpose | Used by live backend? |
 |---|---|---|---|
-| LATITUDE / LONGITUDE | 0 | 0% | Complete — every AED has usable coordinates, no fallback needed |
-| AED_LOCATION_DESCRIPTION | 0 | 0% | Complete — used as fallback display field when BUILDING_NAME is missing |
-| OPERATING_HOURS | 7 | 0.07% | Falls to `status: "unknown"` in parser; AED still shown, accessibility flagged as unconfirmed rather than dropped |
-| BUILDING_NAME | 5,265 | 54.6% | Reflects real-world AED placement — many AEDs are on streets, in void decks, or at standalone kiosks rather than inside named buildings. Not a data quality defect. AED_LOCATION_DESCRIPTION used as fallback. |
-| UNIT_NUMBER | 9,301 | 96.4% | Same reasoning — unit numbers only apply to AEDs inside numbered office/shop units, which is the minority case. |
-| AED_LOCATION_FLOOR_LEVEL | 205 | 2.1% | Treated as "floor unknown" in output display. |
-| HOUSE_NUMBER | 97 | 1.0% | Treated as "unknown" in output display. |
+| `data/processed/aed_parsed.geojson` | Notebook, cell 13 | Official checksummed reproducibility artifact — full parsed dataset in GeoJSON | No |
+| `backend/app/data/aed_parsed_backend.json` | Notebook, added export cell | Plain-JSON export of the same parsed data, with `parsed_hours` preserved as a real nested object rather than a stringified GeoJSON property | **Yes** — this is what the FastAPI backend loads at startup |
+| `data/cached_scenarios.json` | Notebook, cell 15 | 20 curated synthetic test locations (name, lat/lng, day, time) used as the bounded, documented set of valid location inputs | Yes — backend validates incoming `location` against this list |
+| `data/cached_routes.json` | Notebook, cell 16 | Precomputed candidate-AED distances for each of the 20 scenarios, used to build and sanity-check the evaluation report | No — evaluation-only. Live backend recomputes distances fresh via `get_candidates()` against the full dataset, not from this cache |
+| `evaluation/evaluation_results.json` | Notebook, cells 25/27 | Metrics and per-scenario results comparing the ranking system against the baseline | No — reporting artifact, referenced in `evaluation_plan.md` and the README |
 
-### Operating-hours parsing results
+**Why two parsed exports exist (`aed_parsed.geojson` vs `aed_parsed_backend.json`):**
+GeoJSON export via `geopandas`/`fiona` does not reliably preserve nested dict columns
+(`parsed_hours`) as real JSON — it can silently stringify them. Rather than write
+string-parsing logic to recover a nested structure that should never have been
+flattened, a second, backend-facing export was added that writes plain JSON directly,
+keeping `parsed_hours` as a real object. Both files are derived from the same parsed
+`gdf` in the same notebook run — they are not independent sources of truth, and are
+regenerated together whenever the notebook is re-run.
 
-| Status | Count | % of total |
-|---|---|---|
-| Parsed (high or medium confidence) | 9,630 | 99.86% |
-| Unknown (blank/null source text) | 7 | 0.07% |
-| Ambiguous (parsing risk — see below) | 7 | 0.07% |
+## Transformations applied (summary — full logic in `notebooks/Hackathon.ipynb`)
 
-**Confidence breakdown (within "parsed" status):**
+1. **Operating-hours parsing** (`parse_operating_hours`) — the raw `OPERATING_HOURS`
+   text field is parsed into a structured per-day schedule, with a `confidence` level
+   (`high`/`medium`/`low`/`none`) and `status` (`parsed`/`ambiguous`/`unknown`).
+   Remarks text is classified into risk categories (`mid_day_gap`,
+   `conditional_access`, `midnight_rollover`, `other_remark`) and any remark type
+   describing an unmodelable condition (mid-day gap, fully conditional access)
+   downgrades the row to `ambiguous`/`low` confidence rather than being ignored.
+2. **Distance estimation** — walking distance is *not* from a routing API. It is
+   estimated as `straight_line_distance_m × 1.35` (a commonly cited pedestrian
+   detour-factor multiplier), applied uniformly. This is an approximation, not a real
+   route, and is labeled as such (`walking_distance_method:
+   detour_factor_estimate_1.35x`) in every cached record.
+3. **Candidate selection** — for a given origin point, the 10 nearest AEDs by
+   straight-line distance are taken as candidates before ranking (`N_CANDIDATES = 10`
+   in the notebook, `CANDIDATE_POOL_SIZE` in the backend — kept in sync manually).
 
-| Confidence | Count |
-|---|---|
-| High (no Remarks clause) | 9,575 |
-| Medium (Remarks clause present, safe direction) | 55 |
+## Supplemental data
 
-### Remarks clause handling (62 rows, 0.6% of dataset)
+- **Geopy `geodesic` distance calculation** — open-source library, used for
+  straight-line distance only; not a live network service.
+- No other external, live, or third-party datasets are used. No population, footfall,
+  or demand data is incorporated in this MVP.
 
-62 rows contain a `Remarks:` clause appended to the base OPERATING_HOURS
-text. These were **not** uniform in meaning and required classification:
+## What this data explicitly does not support
 
-- **55 rows (89%) — midnight rollover** (e.g., "Closes at 3:00 AM"): the
-  AED's session extends past midnight into the next calendar day. The
-  parser does not model this rollover — each day's hours are treated
-  independently — so very-late-night queries for these specific AEDs may
-  be **under-reported as closed** when the AED is actually still within
-  an extended session. This is a deliberate, documented limitation: the
-  system defaults toward under-claiming accessibility (false negative)
-  rather than over-claiming it (false positive), consistent with the
-  brief's safety requirements. Parsed with `confidence: "medium"`.
-
-- **4 rows — mid-day closure gap** (e.g., "Closed from 3:00 PM to 6:00
-  PM"): the base schedule does not capture a stated exception window.
-  Because silently ignoring this would risk a **false-accessible**
-  claim (the dangerous direction), these rows are explicitly marked
-  `status: "ambiguous"`, `confidence: "low"` rather than parsed at face
-  value.
-
-- **3 rows — fully conditional/unschedulable access** (e.g., "Depending
-  on arrival and departure of ferries", "Please Call [number], After
-  5:30 PM"): access cannot be represented by a day/time schedule at all.
-  Marked `status: "ambiguous"`, `confidence: "low"`.
-
-## Cached scenario inputs (geocoding + routing)
-
-Per the brief: "Freeze or cache API-derived inputs used in the judged
-demonstration so results can be reproduced without a live service."
-
-| Field | Value |
-|---|---|
-| External service(s) used | None — OneMap Singapore API registration blocked by reCAPTCHA scoring during development; walking distance estimated via detour factor instead (see below) |
-| Number of scenarios | 10 |
-| Number of scenario-candidate pairs cached | 100 (10 scenarios × top-10 nearest candidates each) |
-| What was cached | Straight-line distance (geopy/geodesic) per scenario-to-candidate pair, adjusted via a 1.35× urban pedestrian detour factor to estimate walking distance; parsed operating-hours data per candidate |
-| Walking distance method | Detour factor estimate (1.35× straight-line), not a live routing-network query. This is a recognized approximation technique in pedestrian-accessibility research; it does not account for actual obstacles (waterways, fences, building footprints) the way true network routing would. |
-| Cache file location | /data/cached_scenarios.json (scenario origins), /data/cached_routes.json (distances + parsed hours per candidate) |
-| Retrieval date | [fill in — the day Step 6 was run] |
-| Live service called during judged demo? | No — all distances precomputed and cached; ranking runs entirely offline at query time |
-
-## Synthetic data (test scenarios)
-
-| Field | Value |
-|---|---|
-| What was generated | 10 synthetic test scenarios: location name + coordinates + day of week + time |
-| How it was generated | Manually selected across Singapore to cover variety: dense vs. sparse AED coverage, weekday vs. weekend, and day vs. late-night/early-morning hours, to stress-test both the operating-hours parser and the ranking logic against realistic edge cases |
-| Locations used | Bugis Junction, Toa Payoh HDB Hub, Orchard Road (ION Orchard), Pioneer Walk, Jurong Point, Yishun Ring Road, Tampines Mall, Chinatown (Pagoda Street), Punggol Waterway Point, Bishan-Ang Mo Kio Park |
-| Kept separate from real data? | Y — stored in /data/cached_scenarios.json, clearly labeled as synthetic/scripted, never presented as real incident data |
-
-## Explicitly confirmed NOT used (per brief rules)
-
-- [x] No live SCDF incident data
-- [x] No private dispatch data
-- [x] No patient records
-- [x] No responder identities
-- [x] No non-public myResponder data
-- [x] No individual-level demographic/medical risk inference
+Per the SCDF dataset's own limitations and the challenge brief: this data does not
+confirm live AED presence, battery/maintenance status, real-time closures, or
+current operational readiness. All outputs are historical-data-informed planning
+estimates, not live availability claims. See `docs/safety_banner_text.md` for the
+exact user-facing disclaimer required on every screen.

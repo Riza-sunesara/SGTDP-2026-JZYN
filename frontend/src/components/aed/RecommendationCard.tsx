@@ -12,12 +12,13 @@ export function RecommendationCard({ result }: { result: ScenarioResult }) {
         className="flex h-full flex-col rounded-2xl border border-border bg-card p-5"
       >
         <h3 className="text-base font-semibold text-heading">Recommendation</h3>
-        <div className="mt-4 flex flex-1 items-center justify-center rounded-xl border border-divider bg-white p-6 text-center">
-          <p className="text-sm leading-relaxed text-foreground">
-            No AED with a historical operating-hours match was identified for this simulated time.
-            No recommendation is shown for this scenario.
-          </p>
-        </div>
+        {result.explanationFacts.length > 0 && (
+          <div className="mt-4 space-y-2 rounded-xl border border-divider bg-white p-4 text-sm leading-relaxed text-foreground">
+            {result.explanationFacts.slice(0, 3).map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
+        )}
       </section>
     );
   }
@@ -47,51 +48,55 @@ export function RecommendationCard({ result }: { result: ScenarioResult }) {
         <ScorePill label="Location Confidence" value={rec.factors.locationConfidence} />
       </div>
 
-      <div className="mt-4 border-t border-divider pt-3">
-        <h4 className="text-sm font-semibold text-heading">Baseline Comparison</h4>
-        <div className="mt-2.5 grid grid-cols-2 gap-3">
-          <div className="min-w-0 rounded-xl border border-border bg-white p-3">
-            <p className="truncate text-[10px] font-semibold uppercase tracking-wide text-primary">
-              Decision Support
-            </p>
-            <p className="mt-0.5 text-[11px] font-medium uppercase tracking-wide text-foreground">
-              Our Ranking
-            </p>
-            <p className="mt-1 truncate text-sm font-medium text-heading">
-              {result.baseline?.decisionSupport.label ?? "Information unavailable"}
-            </p>
-            <p className="truncate text-xs text-foreground">
-              {result.baseline?.decisionSupport.scoreLabel ?? "—"}
-            </p>
-          </div>
-          <div className="min-w-0 rounded-xl border border-border bg-white p-3">
-            <p className="truncate text-[10px] font-semibold uppercase tracking-wide text-foreground">
-              Distance Baseline
-            </p>
-            <p className="mt-0.5 text-[11px] font-medium uppercase tracking-wide text-foreground">
-              Nearest Only
-            </p>
-            <p className="mt-1 truncate text-sm font-medium text-heading">
-              {result.baseline?.distanceBaseline.label ?? "Information unavailable"}
-            </p>
-            <p className="truncate text-xs text-foreground">
-              {result.baseline?.distanceBaseline.distanceLabel ?? "—"}
-            </p>
+      {result.baseline && (
+        <div className="mt-4 border-t border-divider pt-3">
+          <h4 className="text-sm font-semibold text-heading">Baseline Comparison</h4>
+          <div className="mt-2.5 grid grid-cols-2 gap-3">
+            <div className="min-w-0 rounded-xl border border-border bg-white p-3">
+              <p className="truncate text-[10px] font-semibold uppercase tracking-wide text-primary">
+                Decision Support
+              </p>
+              <p className="mt-0.5 text-[11px] font-medium uppercase tracking-wide text-foreground">
+                Our Ranking
+              </p>
+              <p className="mt-1 truncate text-sm font-medium text-heading">
+                {result.baseline.decisionSupport.label}
+              </p>
+              <p className="truncate text-xs text-foreground">
+                {result.baseline.decisionSupport.scoreLabel}
+              </p>
+            </div>
+            <div className="min-w-0 rounded-xl border border-border bg-white p-3">
+              <p className="truncate text-[10px] font-semibold uppercase tracking-wide text-foreground">
+                Distance Baseline
+              </p>
+              <p className="mt-0.5 text-[11px] font-medium uppercase tracking-wide text-foreground">
+                Nearest Only
+              </p>
+              <p className="mt-1 truncate text-sm font-medium text-heading">
+                {result.baseline.distanceBaseline.label}
+              </p>
+              <p className="truncate text-xs text-foreground">
+                {result.baseline.distanceBaseline.distanceLabel}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
-      <div className="mt-4 border-t border-divider pt-3">
-        <h4 className="flex items-center gap-1.5 text-sm font-semibold text-heading">
-          <Info className="size-4 text-primary" aria-hidden />
-          Why this AED?
-        </h4>
-        <div className="mt-1.5 space-y-1 text-[13px] leading-relaxed text-foreground">
-          {result.explanationFacts.slice(0, 3).map((line) => (
-            <p key={line}>{line}</p>
-          ))}
+      {result.explanationFacts.length > 0 && (
+        <div className="mt-4 border-t border-divider pt-3">
+          <h4 className="flex items-center gap-1.5 text-sm font-semibold text-heading">
+            <Info className="size-4 text-primary" aria-hidden />
+            Why this AED?
+          </h4>
+          <div className="mt-1.5 space-y-1 text-[13px] leading-relaxed text-foreground">
+            {result.explanationFacts.slice(0, 3).map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 }

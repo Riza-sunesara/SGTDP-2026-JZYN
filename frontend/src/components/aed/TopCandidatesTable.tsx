@@ -14,11 +14,11 @@ export function TopCandidatesTable({ candidates }: { candidates: AedCandidate[] 
     <section aria-label="Top AED candidates" className="mt-6">
       <h3 className="text-base font-semibold text-heading">Top 3 AED Candidates</h3>
       <p className="mt-1 text-xs text-foreground">
-        Based on historical dataset information for the simulated scenario — not live availability.
+        Ranked from the latest backend response for this scenario.
       </p>
 
       <div className="mt-4 w-full overflow-x-auto rounded-2xl border border-border bg-card">
-        <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+        <table className="w-full min-w-190 border-collapse text-left text-sm">
           <thead>
             <tr className="border-b border-divider text-xs uppercase tracking-wide text-foreground">
               <th scope="col" className="px-4 py-3 font-semibold">
@@ -45,7 +45,7 @@ export function TopCandidatesTable({ candidates }: { candidates: AedCandidate[] 
             {candidates.slice(0, 3).map((candidate, index) => (
               <tr
                 key={candidate.id}
-                className="border-b border-divider transition-colors last:border-0 hover:bg-[color:var(--muted)]"
+                className="border-b border-divider transition-colors last:border-0 hover:bg-muted"
               >
                 <td className="px-4 py-3">
                   <span
@@ -57,13 +57,9 @@ export function TopCandidatesTable({ candidates }: { candidates: AedCandidate[] 
                   </span>
                 </td>
                 <td className="px-4 py-3 text-heading">{candidate.name}</td>
-                <td className="px-4 py-3 text-foreground">
-                  {HOURS_LABEL[candidate.operatingHours]}
-                </td>
+                <td className="px-4 py-3 text-foreground">{HOURS_LABEL[candidate.operatingHours]}</td>
                 <td className="px-4 py-3 text-foreground">{candidate.distanceMeters} m</td>
-                <td className="px-4 py-3 text-foreground">
-                  {candidate.accessibility ?? "Information unavailable"}
-                </td>
+                <td className="px-4 py-3 text-foreground">{candidate.accessibility}</td>
                 <td className="px-4 py-3 font-semibold text-heading">{candidate.overallScore}%</td>
               </tr>
             ))}
