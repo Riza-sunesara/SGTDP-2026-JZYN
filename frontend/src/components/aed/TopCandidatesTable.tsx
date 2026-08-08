@@ -1,4 +1,7 @@
 import type { AedCandidate, OperatingHoursStatus } from "@/lib/aed/types";
+import goldMedal from "@/assests/icons/gold-medal.png";
+import silverMedal from "@/assests/icons/silver-medal.png";
+import bronzeMedal from "@/assests/icons/bronze-medal.png";
 
 const HOURS_LABEL: Record<OperatingHoursStatus, string> = {
   match: "Historical operating-hours match",
@@ -6,8 +9,7 @@ const HOURS_LABEL: Record<OperatingHoursStatus, string> = {
   uncertain: "Operating-hours information uncertain",
 };
 
-/** Gold, silver, bronze medals for ranks 1-3. */
-const MEDALS = ["#C9A227", "#8E9AA6", "#A9702E"];
+const MEDAL_ICONS = [goldMedal, silverMedal, bronzeMedal];
 
 export function TopCandidatesTable({ candidates }: { candidates: AedCandidate[] }) {
   return (
@@ -48,13 +50,11 @@ export function TopCandidatesTable({ candidates }: { candidates: AedCandidate[] 
                 className="border-b border-divider transition-colors last:border-0 hover:bg-muted"
               >
                 <td className="px-4 py-3">
-                  <span
-                    className="flex size-7 items-center justify-center rounded-full text-xs font-bold text-white shadow-sm"
-                    style={{ background: MEDALS[index] ?? "#94a3b8" }}
-                    aria-label={`Rank ${index + 1}`}
-                  >
-                    {index + 1}
-                  </span>
+                  <img
+                    src={MEDAL_ICONS[index]}
+                    alt={`Rank ${index + 1}`}
+                    className="h-6 w-6 rounded-full object-contain"
+                  />
                 </td>
                 <td className="px-4 py-3 text-heading">{candidate.name}</td>
                 <td className="px-4 py-3 text-foreground">{HOURS_LABEL[candidate.operatingHours]}</td>

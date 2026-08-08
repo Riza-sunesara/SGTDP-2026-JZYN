@@ -22,7 +22,7 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-divider bg-background/95 backdrop-blur">
+    <header className="sticky top-12.5 z-40 border-b border-divider bg-background/95 backdrop-blur">
       <nav
         aria-label="Main"
         className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 sm:px-6"

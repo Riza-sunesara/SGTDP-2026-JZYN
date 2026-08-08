@@ -58,7 +58,7 @@ export function MapCard({ userPoint, candidates, recommendation, route }: Props)
             <CircleMarker
               center={[recommendation.point.lat, recommendation.point.lng]}
               radius={9}
-              pathOptions={{ color: "#16a34a", fillColor: "#16a34a", fillOpacity: 0.95 }}
+              pathOptions={{ color: "#db1c1c", fillColor: "#db1c1c", fillOpacity: 0.95 }}
             >
               <Popup>{recommendation.name}</Popup>
             </CircleMarker>
@@ -69,7 +69,7 @@ export function MapCard({ userPoint, candidates, recommendation, route }: Props)
               key={candidate.id}
               center={[candidate.point.lat, candidate.point.lng]}
               radius={7}
-              pathOptions={{ color: "#64748b", fillColor: "#64748b", fillOpacity: 0.8 }}
+              pathOptions={{ color: "#16a34a", fillColor: "#16a34a", fillOpacity: 0.8 }}
             >
               <Popup>{candidate.name}</Popup>
             </CircleMarker>
@@ -78,7 +78,7 @@ export function MapCard({ userPoint, candidates, recommendation, route }: Props)
           {route && route.length >= 2 && (
             <Polyline
               positions={route.map((point) => [point.lat, point.lng])}
-              pathOptions={{ color: "#0f766e", weight: 3, dashArray: "6 4", opacity: 0.8 }}
+              pathOptions={{ color: "#d9f00d", weight: 3, dashArray: "6 4", opacity: 0.8 }}
             />
           )}
         </MapContainer>
@@ -86,13 +86,13 @@ export function MapCard({ userPoint, candidates, recommendation, route }: Props)
 
       <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-foreground">
         <li className="flex items-center gap-1.5">
-          <span className="size-2.5 rounded-full bg-[color:#0f766e]" aria-hidden /> Requested location
+          <span className="size-2.5 rounded-full bg-[#0f766e]" aria-hidden /> Requested location
         </li>
         <li className="flex items-center gap-1.5">
-          <span className="size-2.5 rounded-full bg-[color:#16a34a]" aria-hidden /> Recommended AED
+          <span className="size-2.5 rounded-full bg-[#db1c1c]" aria-hidden /> Recommended AED
         </li>
         <li className="flex items-center gap-1.5">
-          <span className="size-2.5 rounded-full bg-[color:#64748b]" aria-hidden /> Other candidates
+          <span className="size-2.5 rounded-full bg-[#16a34a]" aria-hidden /> Other candidates
         </li>
       </ul>
 
