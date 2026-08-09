@@ -1,4 +1,4 @@
-fastapi==0.141.1
+fastapi[standard]
 geopy==2.5.0
 python-dotenv==1.2.2
 uvicorn[standard]
