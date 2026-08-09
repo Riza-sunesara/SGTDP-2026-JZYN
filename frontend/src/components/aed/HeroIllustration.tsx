@@ -6,7 +6,7 @@ export function HeroIllustration() {
     <div className="relative w-full">
       <div className="relative overflow-hidden rounded-2xl border border-border bg-white shadow-[0_10px_30px_-18px_rgba(15,108,189,0.55)]">
         {/* stylised map surface */}
-        <div className="relative h-[300px] w-full bg-[color:var(--muted)] sm:h-[360px]">
+        <div className="relative h-[300px] w-full bg-muted sm:h-[360px]">
           <svg viewBox="0 0 400 360" className="absolute inset-0 h-full w-full" aria-hidden>
             <g stroke="#d3ecee" strokeWidth="10" fill="none">
               <path d="M-10 90 H410" />
@@ -58,7 +58,7 @@ export function HeroIllustration() {
 
           {/* highlighted rank #1 */}
           <div className="absolute left-[67%] top-[39%] -translate-x-1/2 -translate-y-1/2 text-center">
-            <span className="flex size-11 items-center justify-center rounded-full border-2 border-white bg-[color:var(--success)] shadow-lg">
+            <span className="flex size-11 items-center justify-center rounded-full border-2 border-white bg-success shadow-lg">
               <MapPin className="size-5 text-white" aria-hidden />
             </span>
             <span className="mt-1 inline-block rounded-full bg-white px-2 py-0.5 text-[10px] font-semibold text-heading shadow-sm">
@@ -74,7 +74,7 @@ export function HeroIllustration() {
           Recommendation score
         </p>
         <p className="mt-0.5 text-2xl font-semibold text-heading">91%</p>
-        <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-[color:var(--divider)]">
+        <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-divider">
           <div className="h-full rounded-full bg-primary" style={{ width: "91%" }} />
         </div>
         <p className="mt-2 text-[11px] text-foreground">Simulated scenario output</p>

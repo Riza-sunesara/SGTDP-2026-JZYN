@@ -26,7 +26,7 @@ export function AlertModal({ open, title, message, onClose, onRetry, onReset }: 
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-heading/40 px-4">
+    <div className="fixed inset-0 z-60 flex items-center justify-center bg-heading/40 px-4">
       <div
         role="alertdialog"
         aria-modal="true"
@@ -36,7 +36,7 @@ export function AlertModal({ open, title, message, onClose, onRetry, onReset }: 
       >
         <div className="flex items-start gap-3">
           <AlertTriangle
-            className="mt-0.5 size-5 shrink-0 text-[color:var(--warning)]"
+            className="mt-0.5 size-5 shrink-0 text-warning"
             aria-hidden
           />
           <div className="min-w-0">
