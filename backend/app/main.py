@@ -35,7 +35,7 @@ app = FastAPI(title="AED Insight API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3001"],
+    allow_origins=["http://localhost:5173","https://aed-insight.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
