@@ -11,10 +11,6 @@ node_modules/
 dist/
 build/
 
-# Data (keep frozen snapshot referenced in manifest, not raw dumps)
-data/raw/*
-!data/raw/.gitkeep
-
 # OS
 .DS_Store
 
