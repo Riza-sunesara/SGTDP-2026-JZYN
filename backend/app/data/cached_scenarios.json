@@ -1,0 +1,182 @@
+[
+  {
+    "scenario_id": "S01",
+    "location_name": "Bugis Junction",
+    "day_of_week": "Tuesday",
+    "time": "15:00",
+    "lat": 1.2995890796324496,
+    "lng": 103.85552397170694,
+    "notes": "weekday daytime, dense commercial area"
+  },
+  {
+    "scenario_id": "S02",
+    "location_name": "Toa Payoh HDB Hub",
+    "day_of_week": "Sunday",
+    "time": "23:00",
+    "lat": 1.3328409657023292,
+    "lng": 103.84806838269759,
+    "notes": "weekend nighttime, residential/sparse area"
+  },
+  {
+    "scenario_id": "S03",
+    "location_name": "Orchard Road (ION Orchard)",
+    "day_of_week": "Saturday",
+    "time": "13:00",
+    "lat": 1.3047048950723552,
+    "lng": 103.83213542509972,
+    "notes": "weekend midday, dense shopping district"
+  },
+  {
+    "scenario_id": "S04",
+    "location_name": "Pioneer Walk",
+    "day_of_week": "Saturday",
+    "time": "20:00",
+    "lat": 1.3193796705023573,
+    "lng": 103.69495876550073,
+    "notes": "weekend evening, industrial/western area"
+  },
+  {
+    "scenario_id": "S05",
+    "location_name": "Jurong Point",
+    "day_of_week": "Wednesday",
+    "time": "11:00",
+    "lat": 1.3396,
+    "lng": 103.7066,
+    "notes": "weekday late morning, dense mall area"
+  },
+  {
+    "scenario_id": "S06",
+    "location_name": "Yishun Ring Road (residential)",
+    "day_of_week": "Monday",
+    "time": "06:30",
+    "lat": 1.4263975894460061,
+    "lng": 103.8321241520087,
+    "notes": "weekday early morning, sparse residential, tests office-hours edge case"
+  },
+  {
+    "scenario_id": "S07",
+    "location_name": "Tampines Mall",
+    "day_of_week": "Friday",
+    "time": "19:00",
+    "lat": 1.3526,
+    "lng": 103.9447,
+    "notes": "weekday evening, dense eastern hub"
+  },
+  {
+    "scenario_id": "S08",
+    "location_name": "Chinatown (Pagoda Street)",
+    "day_of_week": "Thursday",
+    "time": "22:30",
+    "lat": 1.2836,
+    "lng": 103.8441,
+    "notes": "weekday late night, mixed heritage/commercial, tests closed-shop scenarios"
+  },
+  {
+    "scenario_id": "S09",
+    "location_name": "Punggol Waterway Point",
+    "day_of_week": "Sunday",
+    "time": "10:00",
+    "lat": 1.4065,
+    "lng": 103.902,
+    "notes": "weekend morning, newer sparse-AED-coverage area, tests low-candidate-density edge case"
+  },
+  {
+    "scenario_id": "S10",
+    "location_name": "Bishan-Ang Mo Kio Park",
+    "day_of_week": "Wednesday",
+    "time": "17:30",
+    "lat": 1.3636,
+    "lng": 103.8435,
+    "notes": "weekday late afternoon, park/outdoor area, tests ambiguous-location-description edge case"
+  },
+  {
+    "scenario_id": "S11",
+    "location_name": "Marina Bay Sands",
+    "day_of_week": "Friday",
+    "time": "21:00",
+    "lat": 1.2834,
+    "lng": 103.8607,
+    "notes": "weekday night, dense tourist/commercial hotspot"
+  },
+  {
+    "scenario_id": "S12",
+    "location_name": "Sentosa Beach Station",
+    "day_of_week": "Saturday",
+    "time": "14:00",
+    "lat": 1.2494,
+    "lng": 103.8303,
+    "notes": "weekend afternoon, leisure/island area, tests lower AED density"
+  },
+  {
+    "scenario_id": "S13",
+    "location_name": "Woodlands Checkpoint",
+    "day_of_week": "Monday",
+    "time": "07:30",
+    "lat": 1.4382,
+    "lng": 103.7691,
+    "notes": "weekday early morning, border/industrial area, tests long-distance case"
+  },
+  {
+    "scenario_id": "S14",
+    "location_name": "Clementi Town Centre",
+    "day_of_week": "Tuesday",
+    "time": "18:30",
+    "lat": 1.3151,
+    "lng": 103.7649,
+    "notes": "weekday evening, mixed residential/commercial density"
+  },
+  {
+    "scenario_id": "S15",
+    "location_name": "Serangoon NEX Mall",
+    "day_of_week": "Sunday",
+    "time": "16:00",
+    "lat": 1.3506,
+    "lng": 103.8721,
+    "notes": "weekend evening, dense mall/transport hub"
+  },
+  {
+    "scenario_id": "S16",
+    "location_name": "Bukit Timah Nature Reserve",
+    "day_of_week": "Saturday",
+    "time": "08:00",
+    "lat": 1.3541,
+    "lng": 103.7764,
+    "notes": "weekend early morning, nature/sparse area, tests no-qualifying-AED case"
+  },
+  {
+    "scenario_id": "S17",
+    "location_name": "Queenstown (Dawson)",
+    "day_of_week": "Wednesday",
+    "time": "12:30",
+    "lat": 1.2977,
+    "lng": 103.806,
+    "notes": "weekday midday, mixed residential area"
+  },
+  {
+    "scenario_id": "S18",
+    "location_name": "Novena Square",
+    "day_of_week": "Thursday",
+    "time": "23:30",
+    "lat": 1.3204,
+    "lng": 103.8437,
+    "notes": "weekday late night, tests closed-shop/uncertain-hours edge case"
+  },
+  {
+    "scenario_id": "S19",
+    "location_name": "Pasir Ris Park",
+    "day_of_week": "Sunday",
+    "time": "06:00",
+    "lat": 1.3816,
+    "lng": 103.9556,
+    "notes": "weekend early morning, coastal/park area, tests low-confidence + far-distance combo"
+  },
+  {
+    "scenario_id": "S20",
+    "location_name": "Boon Lay (Nanyang area)",
+    "day_of_week": "Friday",
+    "time": "22:00",
+    "lat": 1.3483,
+    "lng": 103.6831,
+    "notes": "weekday late night, industrial/university sparse area, tests ambiguous-location-description case"
+  }
+]
