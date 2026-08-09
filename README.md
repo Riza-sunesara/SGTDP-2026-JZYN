@@ -1,16 +1,16 @@
-# [Project Name] — AED Discovery & Routing Simulation Tool
+# AED Insight — AED Discovery & Routing Simulation Tool
 
-> Prototype for planning and simulation only—not for emergency use. In an emergency in Singapore, call 995 immediately and follow SCDF instructions. Use official SCDF/myResponder channels. Do not delay emergency action to use this prototype.
+> Prototype for planning and simulation only-not for emergency use. In an emergency in Singapore, call 995 immediately and follow SCDF instructions. Use official SCDF/myResponder channels. Do not delay emergency action to use this prototype.
 
-Built for Sofstica AI Hackathon 2026 — **Track: AED Accessibility, Lane 1 (Discovery & Routing)**
+Built for Sofstica AI Hackathon 2026 - **Track: AED Accessibility, Lane 1 (Discovery & Routing)**
 
 ---
 
 ## 1. Problem & User Definition
 
-**Intended user:** Community emergency-preparedness planners, facility/registry managers, researchers, and educators — **not** a person mid-emergency.
+**Intended user:** Community emergency-preparedness planners, facility/registry managers, researchers, and educators - **not** a person mid-emergency.
 
-**The decision they need to make:** Given a test location, date, and time, which public-access AEDs in the SCDF registry would realistically be reachable — accounting for both walking distance and whether the AED would actually be open at that moment?
+**The decision they need to make:** Given a test location, date, and time, which public-access AEDs in the SCDF registry would realistically be reachable - accounting for both walking distance and whether the AED would actually be open at that moment?
 
 **What the prototype does NOT do:**
 - Does not confirm live AED availability
@@ -36,38 +36,38 @@ Frontend (Lovable/React) → FastAPI backend *(in progress)* → ranking engine 
 - AED_LOCATION_FLOOR_LEVEL, HOUSE_NUMBER (display only, "unknown" where missing)
 
 **Core logic / models:**
-- **Operating-hours parser** (rule-based/regex, not ML): matches a consistent `Day-range Time-range;` grammar found across 99.86% of the dataset. Expands day ranges (e.g., "Mon - Fri") into individual days, handles explicit "Closed" segments, and separately classifies any appended `Remarks:` clause by risk type (midnight-rollover / mid-day-gap / conditional-access — see `/docs/data_manifest.md` for full breakdown and reasoning).
-- **Distance ranking:** straight-line (geopy/geodesic) distance adjusted by a 1.35× urban pedestrian detour factor to estimate walking distance, since live routing-API access (OneMap) was blocked during development (reCAPTCHA scoring issue) — documented, disclosed approximation, not silent.
+- **Operating-hours parser** (rule-based/regex, not ML): matches a consistent `Day-range Time-range;` grammar found across 99.86% of the dataset. Expands day ranges (e.g., "Mon - Fri") into individual days, handles explicit "Closed" segments, and separately classifies any appended `Remarks:` clause by risk type (midnight-rollover / mid-day-gap / conditional-access - see `/docs/data_manifest.md` for full breakdown and reasoning).
+- **Distance ranking:** straight-line (geopy/geodesic) distance adjusted by a 1.35× urban pedestrian detour factor to estimate walking distance, since live routing-API access (OneMap) was blocked during development (reCAPTCHA scoring issue) - documented, disclosed approximation, not silent.
 - **Scoring:** weighted combination of normalized distance score and hours-accessibility score (`weights = {"distance": 0.5, "hours": 0.5}`), computed only over AEDs already confirmed feasible for the queried day/time.
-- **Confidence/abstention:** AEDs are excluded from ranking entirely (not ranked-but-penalized) when: hours are missing (`status: "unknown"`), hours are ambiguous/unschedulable (`status: "ambiguous"` — mid-day gaps, conditional access), or the parsed schedule shows the AED closed at the queried day/time. This directly implements the brief's "safely abstain when accessibility cannot be established."
+- **Confidence/abstention:** AEDs are excluded from ranking entirely (not ranked-but-penalized) when: hours are missing (`status: "unknown"`), hours are ambiguous/unschedulable (`status: "ambiguous"` - mid-day gaps, conditional access), or the parsed schedule shows the AED closed at the queried day/time. This directly implements the brief's "safely abstain when accessibility cannot be established."
 
 **Assumptions:**
-- Cross-midnight session rollovers (55 rows, 0.6% of dataset) are not modeled — the system may under-report accessibility for very-late-night queries at these specific AEDs, but will never over-claim accessibility (safe-direction error only).
+- Cross-midnight session rollovers (55 rows, 0.6% of dataset) are not modeled - the system may under-report accessibility for very-late-night queries at these specific AEDs, but will never over-claim accessibility (safe-direction error only).
 - Walking distance is a detour-factor estimate, not true street-network routing.
 - Candidate pool per scenario is capped at the 10 nearest AEDs by straight-line distance before hours-filtering is applied.
 
 **Human-approval / abstention points:**
-The system never asserts an AED is "currently open" — only "in registry, hours parsed with [high/medium] confidence, plausibly open at queried time based on stated hours as of the dataset's February 2020 snapshot." Mid-day-gap and conditional-access AEDs are always excluded rather than guessed at.
+The system never asserts an AED is "currently open" - only "in registry, hours parsed with [high/medium] confidence, plausibly open at queried time based on stated hours as of the dataset's February 2020 snapshot." Mid-day-gap and conditional-access AEDs are always excluded rather than guessed at.
 
 ---
 
 ## 3. Baseline & Evaluation Report
 
-**Required baseline:** Nearest AEDs by straight-line (haversine) distance, no hours filtering — `baseline_nearest()`.
+**Required baseline:** Nearest AEDs by straight-line (haversine) distance, no hours filtering - `baseline_nearest()`.
 
-**Test set:** 10 synthetic (location, day-of-week, time) scenarios spanning dense/sparse coverage areas and day/night/weekday/weekend variety — see `/data/cached_scenarios.json`. Full methodology, per-scenario results, and limitations in `/docs/evaluation_plan.md`.
+**Test set:** 10 synthetic (location, day-of-week, time) scenarios spanning dense/sparse coverage areas and day/night/weekday/weekend variety - see `/data/cached_scenarios.json`. Full methodology, per-scenario results, and limitations in `/docs/evaluation_plan.md`.
 
 **Nominated primary metric:** Top-3 feasible-AED recall (directly measures the core product question and maps cleanly to the required baseline).
 
 **Metrics reported (100 scenario-candidate pairs, 500 timed calls for latency):**
 | Metric | Baseline | Our system |
 |---|---|---|
-| Top-3 feasible-AED recall | Not applicable — no hours-awareness | **100%** |
+| Top-3 feasible-AED recall | Not applicable - no hours-awareness | **100%** |
 | False-accessible rate | **30%** (3/10 scenarios) | 0% (excluded before ranking) |
 | p95 response latency | N/A (not ranked) | **0.323 ms** (median 0.199 ms) |
 | Avg top-pick distance | 81.0 m (straight-line) | 110.8 m (walking-adjusted) |
 
-**Failure case (baseline, documented honestly):** Scenario S02 (Toa Payoh HDB Hub, Sunday 23:00) — baseline recommended 2 of its top-3 AEDs at locations confirmed closed at that time; the system's top-3 excluded both. Similar baseline failures occurred in scenarios S04 and S08. Full per-scenario detail in `/docs/evaluation_plan.md`.
+**Failure case (baseline, documented honestly):** Scenario S02 (Toa Payoh HDB Hub, Sunday 23:00) - baseline recommended 2 of its top-3 AEDs at locations confirmed closed at that time; the system's top-3 excluded both. Similar baseline failures occurred in scenarios S04 and S08. Full per-scenario detail in `/docs/evaluation_plan.md`.
 
 **Known limitation (our system, documented honestly):** 62 rows (0.6% of dataset) required special Remarks-clause handling; 7 of those are conservatively marked ambiguous rather than parsed, meaning the system will occasionally abstain on an AED that a more sophisticated parser could have confidently included.
 
@@ -77,9 +77,9 @@ The system never asserts an AED is "currently open" — only "in registry, hours
 
 See `/docs/data_manifest.md` for full source, license, checksum, and version details.
 
-**Data pipeline (Colab, completed):** `/notebooks/` — parses the raw AED dataset, builds the cached scenario/routing data, runs the ranking engine and baseline, and produces the evaluation results below. Outputs: `/data/processed/aed_parsed.geojson`, `/data/cached_scenarios.json`, `/data/cached_routes.json`, `/evaluation/evaluation_results.json`.
+**Data pipeline (Colab, completed):** `/notebooks/` - parses the raw AED dataset, builds the cached scenario/routing data, runs the ranking engine and baseline, and produces the evaluation results below. Outputs: `/data/processed/aed_parsed.geojson`, `/data/cached_scenarios.json`, `/data/cached_routes.json`, `/evaluation/evaluation_results.json`.
 
-**Setup instructions (backend/frontend integration — in progress):**
+**Setup instructions (backend/frontend integration - in progress):**
 ```bash
 # backend
 cd backend
@@ -101,7 +101,7 @@ npm run dev
 - ✅ Uses only historical/synthetic test scenarios (no real incident data)
 - ✅ No live integration with 995, SCDF, or myResponder
 - ✅ No diagnosis, treatment, or CPR instructions provided
-- ✅ Never labels an AED as "currently available" — only "in registry, plausibly open based on stated hours"
+- ✅ Never labels an AED as "currently available" - only "in registry, plausibly open based on stated hours"
 - ✅ Safety banner displayed on every screen
 - ✅ No names, contact details, or precise personal location history collected
 - ✅ No credentials/API keys committed to this repository

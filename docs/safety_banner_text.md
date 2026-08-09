@@ -1,11 +1,11 @@
-# Safety Banner — copy-paste ready
+# Safety Banner - copy-paste ready
 
 This exact text (from the official brief) MUST appear on every user-facing
 screen, clearly visible without scrolling. Do not paraphrase it.
 
 ---
 
-Prototype for planning and simulation only—not for emergency use. In an
+Prototype for planning and simulation only-not for emergency use. In an
 emergency in Singapore, call 995 immediately and follow SCDF instructions.
 Use official SCDF/myResponder channels. Do not delay emergency action to
 use this prototype.
@@ -16,7 +16,7 @@ use this prototype.
 - Pin it as a persistent banner/strip at the top of every page (search page,
   results page, any admin/registry view if you build one)
 - Use a distinct but non-alarming color (e.g., muted amber/yellow background,
-  dark text) — not emergency red, since this tool is explicitly NOT an
+  dark text) - not emergency red, since this tool is explicitly NOT an
   emergency service
 - Keep font size readable; don't let it be dismissible/hideable
 
