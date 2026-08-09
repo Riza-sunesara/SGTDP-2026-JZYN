@@ -1,6 +1,6 @@
-// Shape of a future backend response. The UI reads ONLY from this object so
+// Shape of a backend response. The UI reads ONLY from this object so
 // every component (map, recommendation, baseline, table, explanation) stays
-// consistent. Swap the mock service for REST calls without touching components.
+// consistent. 
 
 export type ScenarioInput = {
   location: string;

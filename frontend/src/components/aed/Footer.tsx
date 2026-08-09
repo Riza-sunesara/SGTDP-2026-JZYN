@@ -8,7 +8,7 @@ const LINKS = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary py-10 text-center text-primary-foreground">
+    <footer className="bg-footer-bg py-10 text-center text-primary-foreground">
       <div className="mx-auto max-w-4xl px-4">
         <p className="text-lg font-semibold">AED Insight</p>
         <nav

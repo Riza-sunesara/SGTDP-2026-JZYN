@@ -58,7 +58,7 @@ function Index() {
               Try It Now
             </h2>
             <p className="mx-auto mt-2 max-w-xl text-center text-sm text-foreground">
-              Enter a simulated location, day, and time to see how candidate AEDs are ranked.
+              Enter a simulated location, day, and time to see how available AEDs are ranked.
             </p>
 
             <div className="mt-8">

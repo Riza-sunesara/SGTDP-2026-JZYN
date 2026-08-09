@@ -41,10 +41,7 @@ export function ResultsSection({ result }: { result: ScenarioResult }) {
               role="status"
               className="flex items-start gap-2.5 rounded-xl border border-(--warning)/45 bg-white p-4"
             >
-              <AlertTriangle
-                className="mt-0.5 size-4 shrink-0 text-warning"
-                aria-hidden
-              />
+              <AlertTriangle className="mt-0.5 size-4 shrink-0 text-warning" aria-hidden />
               <div className="min-w-0">
                 <p className="text-sm font-semibold text-heading">{content.title}</p>
                 <p className="mt-1 text-sm leading-relaxed text-foreground">{content.body}</p>

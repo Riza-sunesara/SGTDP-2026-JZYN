@@ -20,14 +20,14 @@ Built for Sofstica AI Hackathon 2026 - **Track: AED Accessibility, Lane 1 (Disco
 
 **Success criteria:** Outperform the required straight-line-nearest baseline on false-accessible rate (does the recommendation account for closed AEDs?) across synthetic test scenarios, while maintaining low response latency and only recommending confirmed-feasible AEDs.
 
-**Result achieved:** Across 10 synthetic scenarios, baseline produced a false-accessible recommendation in 30% of cases (3/10 scenarios); the system's top-3 recall was 100% feasible with p95 latency of 0.323ms (500 timed samples). Full results in `/docs/evaluation_plan.md`.
+**Result achieved:** Across 20 synthetic scenarios, baseline produced a false-accessible recommendation in 30% of cases (6/20 scenarios); the system's top-3 recall was 100% feasible with p95 latency of 0.323ms (500 timed samples). Full results in `/docs/evaluation_plan.md`.
 
 ---
 
 ## 2. Method Card
 
 **Architecture overview:**
-Frontend (Lovable/React) → FastAPI backend *(in progress)* → ranking engine (Python, developed and validated in Colab) reading from a precomputed/cached data layer: parsed AED registry + cached scenario-candidate distances. No live external API calls at query time.
+Frontend (Vite/NextJs/Tanstack Start) → FastAPI backend → ranking engine (Python, developed and validated in Colab) reading from a precomputed/cached data layer: parsed AED registry + cached scenario-candidate distances. No live external API calls at query time.
 
 **Input features used:**
 - OPERATING_HOURS (parsed into structured per-day schedules)

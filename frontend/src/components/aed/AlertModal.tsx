@@ -35,10 +35,7 @@ export function AlertModal({ open, title, message, onClose, onRetry, onReset }: 
         className="w-full max-w-md rounded-xl border border-border bg-white p-6 shadow-xl"
       >
         <div className="flex items-start gap-3">
-          <AlertTriangle
-            className="mt-0.5 size-5 shrink-0 text-warning"
-            aria-hidden
-          />
+          <AlertTriangle className="mt-0.5 size-5 shrink-0 text-warning" aria-hidden />
           <div className="min-w-0">
             <h3 id="alert-title" className="text-base font-semibold text-heading">
               {title}

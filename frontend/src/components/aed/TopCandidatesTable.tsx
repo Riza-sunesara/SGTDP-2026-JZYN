@@ -57,7 +57,9 @@ export function TopCandidatesTable({ candidates }: { candidates: AedCandidate[] 
                   />
                 </td>
                 <td className="px-4 py-3 text-heading">{candidate.name}</td>
-                <td className="px-4 py-3 text-foreground">{HOURS_LABEL[candidate.operatingHours]}</td>
+                <td className="px-4 py-3 text-foreground">
+                  {HOURS_LABEL[candidate.operatingHours]}
+                </td>
                 <td className="px-4 py-3 text-foreground">{candidate.distanceMeters} m</td>
                 <td className="px-4 py-3 text-foreground">{candidate.accessibility}</td>
                 <td className="px-4 py-3 font-semibold text-heading">{candidate.overallScore}%</td>

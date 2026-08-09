@@ -17,7 +17,11 @@ export function MapCard({ userPoint, candidates, recommendation, route }: Props)
   );
 
   const points = useMemo(
-    () => [userPoint, ...remainingCandidates.map((candidate) => candidate.point), ...(recommendation ? [recommendation.point] : [])],
+    () => [
+      userPoint,
+      ...remainingCandidates.map((candidate) => candidate.point),
+      ...(recommendation ? [recommendation.point] : []),
+    ],
     [remainingCandidates, recommendation, userPoint],
   );
 
@@ -44,13 +48,22 @@ export function MapCard({ userPoint, candidates, recommendation, route }: Props)
       </div>
 
       <div className="relative mt-4 min-h-72 w-full flex-1 overflow-hidden rounded-xl border border-divider">
-        <MapContainer center={center} zoom={14} scrollWheelZoom className="relative h-full w-full z-0">
+        <MapContainer
+          center={center}
+          zoom={14}
+          scrollWheelZoom
+          className="relative h-full w-full z-0"
+        >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          <CircleMarker center={[userPoint.lat, userPoint.lng]} radius={9} pathOptions={{ color: "#0f766e", fillColor: "#0f766e", fillOpacity: 0.95 }}>
+          <CircleMarker
+            center={[userPoint.lat, userPoint.lng]}
+            radius={9}
+            pathOptions={{ color: "#0f766e", fillColor: "#0f766e", fillOpacity: 0.95 }}
+          >
             <Popup>Requested location</Popup>
           </CircleMarker>
 

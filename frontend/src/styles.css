@@ -64,6 +64,7 @@
   --color-divider: var(--divider);
   --color-primary-hover: var(--primary-hover);
   --color-heading: var(--heading);
+  --color-footer-bg: var(--footer-bg);
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -106,6 +107,7 @@
   --sidebar-accent-foreground: #0f766e;
   --sidebar-border: #a7dadc;
   --sidebar-ring: #0b6470;
+  --footer-bg: #16324f;
 }
 
 .dark {

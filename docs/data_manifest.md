@@ -6,11 +6,11 @@
 - **Publisher:** Singapore Civil Defence Force (SCDF), via data.gov.sg
 - **Underlying data date:** February 2020 (historical registry snapshot, not a live feed)
 - **File used:** `data/raw/PublicAccessAEDs.geojson` (untouched original download)
-- **SHA-256 checksum (raw file):** _[e2ef793ffd0fd2dbe99ffdcfb21b38154c81fd0685d1f0fcc5b75a6d57205c02]_
-- **SHA-256 checksum (processed file):** _[d88b165d5e22f4ed3d4a69f67f4db31e5c5e5bd5345f42408792ede1d50b8783]_
-- **License/usage:** [Contains information from SCDF Public Access AEDs accessed on
+- **SHA-256 checksum (raw file):** _e2ef793ffd0fd2dbe99ffdcfb21b38154c81fd0685d1f0fcc5b75a6d57205c02_
+- **SHA-256 checksum (processed file):** _d88b165d5e22f4ed3d4a69f67f4db31e5c5e5bd5345f42408792ede1d50b8783_
+- **License/usage:** Contains information from SCDF Public Access AEDs accessed on
   8 August 2026 from data.gov.sg which is made available under the terms of the
-  Singapore Open Data Licence version 1.0 (https://data.gov.sg/open-data-licence)]*
+  Singapore Open Data Licence version 1.0 https://data.gov.sg/open-data-licence*
   - Free for personal or commercial use, per the licence terms. Used here strictly
   as a historical planning/simulation snapshot, per the challenge brief's boundary -
   not treated as a live or authoritative source of current AED status, and not used
