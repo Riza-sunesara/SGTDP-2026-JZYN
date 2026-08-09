@@ -77,20 +77,29 @@ The system never asserts an AED is "currently open" - only "in registry, hours p
 
 See `/docs/data_manifest.md` for full source, license, checksum, and version details.
 
-**Data pipeline (Colab, completed):** `/notebooks/` - parses the raw AED dataset, builds the cached scenario/routing data, runs the ranking engine and baseline, and produces the evaluation results below. Outputs: `/data/processed/aed_parsed.geojson`, `/data/cached_scenarios.json`, `/data/cached_routes.json`, `/evaluation/evaluation_results.json`.
+**Data pipeline (Colab, completed):** `/notebooks/Hackathon.ipynb` — parses the raw AED dataset, builds the cached scenario data, runs the ranking engine and baseline, and produces the evaluation results referenced above. Key outputs: `/data/processed/aed_parsed.geojson`, `/backend/app/data/aed_parsed_backend.json`, `/data/cached_scenarios.json`, `/evaluation/evaluation_results.json`.
 
-**Setup instructions (backend/frontend integration - in progress):**
+**Live deployment:**
+- Frontend: https://aed-insight.vercel.app
+- Backend API: https://sgtdp-backend.fastapicloud.dev
+
+**Local setup instructions:**
 ```bash
 # backend
 cd backend
 pip install -r requirements.txt
-uvicorn app.main:app --reload
+fastapi dev app/main.py
 
 # frontend
 cd frontend
 npm install
 npm run dev
 ```
+
+**Backend deployment notes (for reproducibility):**
+- Deployed via FastAPI Cloud (`fastapi deploy`), using `requirements.txt` (includes `fastapi[standard]`) and a `.python_version` file at the `backend/` root to pin the Python version.
+- `backend/app/data/` contains a local copy of `aed_parsed_backend.json` and `cached_scenarios.json` — this makes the backend self-contained for deployment, independent of the repo's top-level `/data/` folder (which remains the canonical, checksummed source per `data_manifest.md`).
+- CORS (`main.py`) is configured to allow the deployed frontend origin; local development origins (`localhost:5173`) remain enabled for local testing.
 
 **Dataset checksums:** see `/docs/data_manifest.md` (raw file + processed file SHA-256 recorded there).
 
