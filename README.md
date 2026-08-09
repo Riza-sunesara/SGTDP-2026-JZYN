@@ -20,7 +20,7 @@ Built for Sofstica AI Hackathon 2026 - **Track: AED Accessibility, Lane 1 (Disco
 
 **Success criteria:** Outperform the required straight-line-nearest baseline on false-accessible rate (does the recommendation account for closed AEDs?) across synthetic test scenarios, while maintaining low response latency and only recommending confirmed-feasible AEDs.
 
-**Result achieved:** Across 20 synthetic scenarios, baseline produced a false-accessible recommendation in 30% of cases (6/20 scenarios); the system's top-3 recall was 100% feasible with p95 latency of 0.323ms (500 timed samples). Full results in `/docs/evaluation_plan.md`.
+**Result achieved:** Across 20 synthetic scenarios, baseline produced a false-accessible recommendation in 30% of cases (6/20 scenarios); the system's top-3 recall was 100% feasible with p95 latency of 0.395ms (500 timed samples). Full results in `/docs/evaluation_plan.md`.
 
 ---
 
@@ -55,7 +55,7 @@ The system never asserts an AED is "currently open" - only "in registry, hours p
 
 **Required baseline:** Nearest AEDs by straight-line (haversine) distance, no hours filtering - `baseline_nearest()`.
 
-**Test set:** 10 synthetic (location, day-of-week, time) scenarios spanning dense/sparse coverage areas and day/night/weekday/weekend variety - see `/data/cached_scenarios.json`. Full methodology, per-scenario results, and limitations in `/docs/evaluation_plan.md`.
+**Test set:** 20 synthetic (location, day-of-week, time) scenarios spanning dense/sparse coverage areas and day/night/weekday/weekend variety - see `/data/cached_scenarios.json`. Full methodology, per-scenario results, and limitations in `/docs/evaluation_plan.md`.
 
 **Nominated primary metric:** Top-3 feasible-AED recall (directly measures the core product question and maps cleanly to the required baseline).
 
@@ -117,5 +117,5 @@ npm run dev
 
 ---
 
-## 6. What We'd Improve With More Time
-[Fill in during/after build]
+## 6. What I'd Improve With More Time
+With more time, we'd prioritize real street-network routing over the current detour-factor estimate - it starts to matter once candidate AEDs are genuinely close together. We'd also expand location coverage beyond the current curated list of 20, since a real planner would want to search anywhere in Singapore. A smaller fix: ~60 AED records have operating-hours text describing sessions that run past midnight, which our parser doesn't currently model - it safely under-reports rather than over-promises accessibility, but it's a known gap worth closing. Lastly, our warning thresholds (distance, confidence) are reasonable starting assumptions rather than values validated against real score distributions - a larger evaluation set would let us justify them with data instead of judgment.

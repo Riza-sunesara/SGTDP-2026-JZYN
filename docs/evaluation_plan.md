@@ -112,11 +112,6 @@ farther away would work against the brief's transparency requirements.
 | `LONG_DISTANCE_THRESHOLD_M` | 1200 m | Above this walking-distance estimate, a `long-distance` warning is attached to the result |
 | `LOW_CONFIDENCE_THRESHOLD` | 50 (0–100 scale) | Below this location-confidence score, a `low-confidence` warning is attached |
 
-_[Optional next step: pull the actual `overall_score` distribution for all
-20 scenarios' top-1 picks from `evaluation_results.json` and state the
-range, so these two remaining threshold values are backed by an observed
-number rather than asserted as reasonable.]_
-
 ## Limitations & honest failure notes
 
 - Walking distance is a detour-factor estimate (1.35×), not true network
