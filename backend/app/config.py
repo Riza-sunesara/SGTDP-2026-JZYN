@@ -9,16 +9,20 @@ from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent
-APP_DATA_DIR = BASE_DIR / "data"
-REPO_ROOT = BASE_DIR.parents[1]
-REPO_DATA_DIR = REPO_ROOT / "data"
+DATA_DIR = BASE_DIR / "data"
 
-AED_DATA_PATH = APP_DATA_DIR / "aed_parsed_backend.json"
-SCENARIOS_PATH = APP_DATA_DIR / "cached_scenarios.json"
+AED_DATA_PATH = DATA_DIR / "aed_parsed_backend.json"
+SCENARIOS_PATH = DATA_DIR / "cached_scenarios.json"
+
+# Fail loudly at import time if the bundled data is missing, rather than
+# deep inside load_data() with a less obvious traceback. Since these files
+# are committed inside backend/app/data/, this should only ever fire if a
+# deployment genuinely didn't include them (e.g. an overly broad
+# .gitignore/.fastapicloudignore excluding the data folder).
 if not AED_DATA_PATH.exists():
-    AED_DATA_PATH = REPO_DATA_DIR / "processed" / "aed_parsed.geojson"
+    raise RuntimeError(f"Missing bundled data file: {AED_DATA_PATH}")
 if not SCENARIOS_PATH.exists():
-    SCENARIOS_PATH = REPO_DATA_DIR / "cached_scenarios.json"
+    raise RuntimeError(f"Missing bundled data file: {SCENARIOS_PATH}")
 
 
 # Recommendation ranking weights.
